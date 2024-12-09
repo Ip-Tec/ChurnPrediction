@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churn Prediction Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="avatar">JD</div>
+          <h3>John Don</h3>
+          <p>johndon@company.com</p>
+        </div>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">File</a>
+          <a href="#">Messages</a>
+          <a href="#">Notifications</a>
+          <a href="#">Location</a>
+          <a href="#">Graphs</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard">
+        <header class="dashboard-header">
+          <div class="info-box">
+            <h4>Earnings</h4>
+            <p>$628</p>
+          </div>
+          <div class="info-box">
+            <h4>Share</h4>
+            <p>2434</p>
+          </div>
+          <div class="info-box">
+            <h4>Likes</h4>
+            <p>1259</p>
+          </div>
+          <div class="info-box">
+            <h4>Rating</h4>
+            <p>8.5</p>
+          </div>
+        </header>
+
+        <section class="charts">
+          <canvas id="barChart"></canvas>
+          <canvas id="lineChart"></canvas>
+        </section>
+      </main>
+    </div>
+
+    <script src="../static/scripts/chart.js"></script>
+  </body>
+</html>

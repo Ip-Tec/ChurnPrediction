@@ -1,0 +1,277 @@
+student_id,matric_number,reg_number,firstname,middlename,lastname,sex,email,phone,nationality,date_of_birth,state,current_mode,certcode,faccode,depcode,current_level,current_session,current_verdict,entry_session,lg_state,lg_area
+E1078483,CMS/FBM/MLS/17/36109,75328269HA,Jerry,Osasumwen,Enobakhare,m,classicjeje@gmail.com,+234-08182789609#,NG,1997-07-24#,returning,ug_ft,BSCPYS,FBM,PYS,300,2022,Z,2017,edo,oredo
+E1103883,CMS/FCS/MED/19/58947,95715280FJ,Sophy,Oluchi,Anozie,f,aauutme@gmail.com,+234-7069311347#,NG,2001-09-28#,school fee paid,ug_ft,MBBS,FCS,MED,300,2022,0,2019,imo,oru-east
+E1104338,FLS/HND/19/55818,97013379CB,Janet,Oluwadamilola,Ajo,f,JANETOLUWADAMILOLA2002@GMAIL.COM,+234-7032990758#,NG,2002-12-15#,school fee paid,ug_ft,BSCANA,FBM,ANA,300,2022,0,2019,ondo,akure-north
+E1116070,FLW/LAW/20/65817,20392814JF,Precious,Okezi,Ogueri,f,preshokezi@gmail.com,+234-8142173463#,NG,1996-10-08#,school fee paid,ug_ft,LLB,FLW,LAW,300,2022,0,2020,delta,isoko-south
+E1116074,FMS/BUS/20/65305,20540115DA,Eric,,Ighomuaye,m,morningstareric19@gmail.com,+234-8120554952#,NG,1999-06-09#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,delta,ughelli-north
+E1116095,FLS/BCH/20/64458,20507713GF,Prince,Osatohanmwen,Agbonkpolo,m,osatohaa@gmail.com,+234-09054892246#,NG,2000-09-04#,returning,ug_ft,BSCBCH,FLS,BCH,300,2022,Z,2020,edo,uhunmwonde
+E1116198,FPS/CSC/20/61277,21289584FF,Moyosore,Peluoluwa,Aidi,m,sandrahilsdon6@gmail.com,+234-8037127156#,NG,2001-10-20#,courses registered,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,ondo,akoko-north
+E1116247,FET/IPE/20/62019,21344838EF,Mabel,Adesewa,Ekundayo,f,adesewaekundayo29@gmail.com,+234-08158421085#,NG,2002-01-14#,courses registered,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,ekiti,ilejemeje
+E1116257,FMS/BAF/20/61444,21677420BF,Prince,Oshoma,Akpeokhai,m,princeokhaioshoma@gmail.com,+234-8100606875#,NG,2002-03-05#,school fee paid,ug_ft,BSCBAF,FMS,BAF,300,2022,0,2020,edo,etsako-central
+E1116264,FAT/HIS/20/68461,20527058FA,Joshua,Kehinde,Ayiyi,m,jkehinde052@gmail.com,+234-09061917859#,NG,2000-09-08#,school fee paid,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,edo,oredo
+E1116284,FAT/HIS/20/68091,20388036EF,Joshua,Emmanuel,Inegbedion,m,inegbedionjoshua2020@gmail.com,+234-07059048836#,NG,2003-01-27#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,edo,esan-west
+E1116312,FSS/POL/20/62301,20393436CF,Ijeoma,Constance,Chike,f,constancechike@gmail.com,+234-08142142624#,NG,2003-10-04#,courses registered,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,delta,aniocha-north
+E1116363,FSS/POL/20/69314,21725866DF,Adebowale,Williams,Akinlalu,m,akinlaludebo001@gmail.com,+234-09138620901#,NG,2004-03-18#,school fee paid,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,ondo,okitipupa
+E1116383,FAT/HIS/20/68253,21708802EF,Muyiwa,Maxwell,Olorunfunmi,m,maxwellolorunfunmi8@gmail.com,+234-09043472150#,NG,1999-07-21#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,ondo,owo
+E1116558,FSS/ECO/20/67300,20572881HF,Olayiwola,Johnson,Ijaboyede,m,johnsonijaboyede@gmail.com,+234-08069259935#,NG,2002-03-08#,returning,ug_ft,BSCECO,FSS,ECO,300,2022,Z,2020,ondo,owo
+E1116564,FLS/BCH/20/65088,20434231BF,Rukevwe,,Sekondi,m,ultimateducation2@gmail.com,+234-08141641079#,NG,2002-07-26#,school fee paid,ug_ft,BSCBCH,FLS,BCH,300,2022,0,2020,delta,udu
+E1116676,FSS/SOC/20/67346,20571137FF,Blessing,Osamuyimwen,Otabor,f,Osamuyimwenotabor@gmail.com,+234-08107982050#,NG,2001-01-28#,returning,ug_ft,BSCSOC,FSS,SOC,300,2022,Z,2020,edo,orhionmwon
+E1116700,FET/MEE/20/61488,20579710DF,Emmanuel,Onoroborlu,Salami,m,Salamiemmanuel17@gmail.com,+234-09075745752#,NG,1996-10-15#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,edo,esan-central
+E1116745,FLS/BCH/20/66741,20446702HF,Osighwe,Albert,Apakhumhe,m,osighweapakhumhe@gmail.com,+234-08100335289#,NG,2002-09-09#,returning,ug_ft,BSCBCH,FLS,BCH,300,2022,0,2020,edo,etsako-central
+E1116777,FET/ELE/20/67835,20573397GA,Anselm,Imhodukhe,Adolphus,m,fireprince0407@gmail.com,+234-8089055325#,NG,2003-04-07#,school fee paid,ug_ft,BENGELE,FET,ELE,300,2022,0,2020,edo,etsako-east
+E1116814,FET/ELE/20/65992,20386333BA,Michael,Akhaze,Okaka,m,akhazemichael3@gmail.com,+234-07060457446#,NG,2002-04-10#,school fee paid,ug_ft,BENGELE,FET,ELE,300,2022,0,2020,edo,esan-central
+E1116891,FSS/ECO/20/65812,20575024JF,Ojie,William,Kola,m,bahdman8@gmail.com,+234-09072170718#,NG,2000-02-10#,returning,ug_ft,BSCECO,FSS,ECO,300,2022,Z,2020,edo,oredo
+E1116895,FET/ELE/20/61442,20517462FF,Pedro,Osaivbie,Osazee,m,ozpedro8@gmail.com,+234-09034664288#,NG,2002-09-18#,returning,ug_ft,BENGELE,FET,ELE,300,2022,Z,2020,edo,ovia-south-west
+E1116914,FAT/TMA/20/66592,21583488JA,Favour,Joy,Moses,f,favourmoses002@gmail.com,+234-08028288120#,NG,2002-03-23#,returning,ug_ft,BATMA,FAT,TMA,300,2022,Z,2020,edo,esan-west
+E1116941,FAT/PHI/20/68883,21262544HA,Peace,Happiness,Jeremiah,f,jeremiahhappiness123@gmail.com,+234-8052204139#,NG,2001-03-03#,returning,ug_ft,BAPHI,FAT,PHI,300,2022,Z,2020,edo,orhionmwon
+E1116959,FPS/CSC/20/69403,21273339FF,Oke,Gift,Ohure,m,okestical916@gmail.com,+234-8125087249#,NG,2002-08-17#,school fee paid,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,delta,isoko-south
+E1116970,FET/MEE/20/64262,20410092GA,Efeoghene,Collins,Ariole,m,collinsariole@gmail.com,+234-09030110456#,NG,2003-09-07#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,delta,udu
+E1116989,FMS/BUS/20/62636,20574065EF,Joy,Samuel,Aziza,f,azizajoysamuel2020@gmail.com,+234-08159321328#,NG,2003-06-14#,school fee paid,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,edo,etsako-west
+E1117024,FSS/SOC/20/62431,21680091FF,Godfray,Ohikhuai,Alakhume,m,boitruthz1@gmail.com,+234-07062457944#,NG,1999-06-28#,returning,ug_ft,BSCSOC,FSS,SOC,300,2022,Z,2020,edo,owan-east
+E1117069,FES/ARC/20/66915,20570691AF,Destiny,Clinton,Onuwabhagbe,m,onuwabhagbedestinyclinton@gmail.com,+234-9078472390#,NG,2001-05-01#,returning,ug_ft,BSCARC,FES,ARC,300,2022,Z,2020,edo,esan-west
+E1117091,FAT/HIS/20/61745,21743603IA,Oghale,Juliet,Youth,f,julietoghale8@gmail.com,+234-8128259581#,NG,2002-01-30#,courses registered,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,delta,isoko-south
+E1117093,FET/MEE/20/67128,20512126EA,Ayahomon,,Ihiemekpen,m,jendy0366@gmail.com,+234-07011702789#,NG,2001-12-06#,school fee paid,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,edo,esan-west
+E1117119,FSS/ECO/20/61744,20564516AF,Timothy,,Osigbemhe,m,263830050t@gmail.com,+234-09051330593#,NG,2002-03-30#,returning,ug_ft,BSCECO,FSS,ECO,300,2022,Z,2020,edo,etsako-west
+E1117190,FMS/BUS/20/66575,20529510EF,Onome,Success,Erieyiovbe,f,erieyiovbepresh@gmail.com,+234-8052687345#,NG,2002-09-30#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,delta,ughelli-north
+E1117265,FMS/BAF/20/68807,20576880DA,Ehijele,Sylvester,Oriaifo,m,tomichlink2012@gmail.com,+234-08080244754#,NG,2000-04-25#,returning,ug_ft,BSCBAF,FMS,BAF,300,2022,Z,2020,edo,esan-central
+E1117292,FET/MEE/20/65607,20594453EA,Oshiobughie,Elisha,Eshiesimua,m,eshiesimuaoshiobughie2020@gmail.com,+234-08158664063#,NG,2001-12-17#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,edo,etsako-central
+E1117327,FMS/BUS/20/69350,20564458BA,Loveth,Isueken,Aidenagbon,f,lovethaidenagbon@gmail.com,+234-08163230988#,NG,2002-10-14#,school fee paid,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,edo,owan-east
+E1117408,FET/ELE/20/61850,20513736GF,Martins,Uche,Onyeabor,m,amobionyeabor123@gmail.com,+234-08103914241#,NG,2003-10-09#,returning,ug_ft,BENGELE,FET,ELE,300,2022,Z,2020,enugu,nkanu-east
+E1117418,FET/MEE/20/68409,21327545GA,Abdullahi,Olawale,Olaoti,m,olaoti17@gmail.com,+234-09017738346#,NG,2000-05-24#,school fee paid,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,kwara,ifelodun
+E1117487,FMS/BUS/20/64609,21314501BF,Joshua,Moses,Ogbeide,m,Ogbeidejoshua02@gmail.com,+234-7060456607#,NG,2003-11-02#,school fee paid,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,edo,owan-west
+E1117496,FPS/CSC/20/67472,20536579EA,Destiny,,Oziegbe,m,dexterosagie123@gmail.com,+234-07018257293#,NG,2002-09-25#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,edo,uhunmwonde
+E1117500,FPS/CSC/20/61642,21291022IF,Gideon,Oritseweyinmi,Amatotsero,m,gideonfransis22@gmail.com,+234-08085402224#,NG,2001-12-18#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,delta,oshimili
+E1117528,FPS/CHM/20/64924,20430444EF,Praise,Ogheneobukome,Onwah,f,Komeahon2@gmail.com,+234-09169225230#,NG,2003-11-29#,returning,ug_ft,BSCICH,FPS,CHM,300,2022,Z,2020,delta,isoko-north
+E1117554,FSS/POL/20/66708,21339510IF,Martina,Chidinma,Chuks-Egeke,f,martinaegeke488@gmail.com,+234-09068515754#,NG,2003-04-24#,courses registered,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,imo,owerri-north
+E1117560,FSS/POL/20/65563,21717740AF,Mayowa,Isaac,Olorunsola,m,olorunsolamayowa384@gmail.com,+234-09060577332#,NG,1999-06-20#,school fee paid,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,ondo,ose
+E1117579,FMS/PUB/20/61604,20531604CF,Ewere,Lucky,Kingsley,m,kingsleyewere12@gmail.com,+234-08134517417#,NG,2000-12-03#,courses registered,ug_ft,BSCPUB,FMS,PUB,300,2022,0,2020,delta,ika-south
+E1117596,FSS/SOC/20/62207,20516061DA,Chinasa,Monica,Obi,f,chinasamonicaobiekwe11@gmail.com,+234-7012056513#,NG,1999-02-09#,returning,ug_ft,BSCSOC,FSS,SOC,300,2022,Z,2020,enugu,ezeagu
+E1117600,FLS/MCB/20/65625,21331826DA,Hazel-Page,Omoisiuwawen,Efe-Ekhianruwa,f,hazelpageefeekhianelruwa@gmail.com,+234-08116442885#,NG,2005-08-25#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2020,edo,orhionmwon
+E1117687,FET/ELE/20/62348,20518346AF,Donald,Omorhogiuwamwen,Osayande,m,clemsonmerits@yahoo.com,+234-08155207770#,NG,2000-08-01#,returning,ug_ft,BENGELE,FET,ELE,300,2022,Z,2020,edo,orhionmwon
+E1117745,FLS/BCH/20/65654,20413833HA,Anita,,Ozulu,f,ozuluanita@gmail.com,+234-09049570184#,NG,2004-09-13#,returning,ug_ft,BSCBCH,FLS,BCH,300,2022,Z,2020,delta,ndokwa-east
+E1117784,FPS/CHM/20/68529,21392472EA,Efemena,,Ighoyivwi,f,menaefe11@gmail.com,+234-08026991677#,NG,2001-08-28#,returning,ug_ft,BSCICH,FPS,CHM,300,2022,Z,2020,delta,okpe
+E1117866,FAT/HIS/20/66383,20560278BA,Victory,Abimbola,Mufutau-Bakare,f,bakerevictory58@gmail.com,+234-07038923200#,NG,2002-10-23#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,osun,ede-north
+E1117928,FPS/CSC/20/63150,22074752JA,Collins,Odianose,Ojie,m,krystanreigns@gmail.com,+234-07089603542#,NG,2003-12-03#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,edo,esan-west
+E1117965,FAT/ENG/20/66145,21679267JA,Eniola,David,Danisa,m,decorouz2020@gmail.com,+234-09032417957#,NG,1997-05-21#,returning,ug_ft,BAENG,FAT,ENG,300,2022,Z,2020,edo,etsako-central
+E1118026,CMS/FBM/ANA/20/62175,21745473EA,Samuel,Olatunji,Adebayo,m,omotosho2009@gmail.com,+234-8133401663#,NG,2001-03-11#,school fee paid,ug_ft,BSCANA,FBM,ANA,300,2022,0,2020,ondo,idanre
+E1118036,FET/MEE/20/68445,20510935BA,Osafomwan,Maxwell,Ikponmwosa,m,osafomwanaxwell125@gmail.com,+234-07052256776#,NG,2001-09-10#,courses registered,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,edo,ovia-north-east
+E1118057,FET/ELE/20/65858,20407582HA,Faithful,Ebubechukwu,Ewere,m,judernfasopra@yahoo.com,+234-08075116063#,NG,2002-11-21#,school fee paid,ug_ft,BENGELE,FET,ELE,300,2022,0,2020,delta,ika-north-east
+E1118063,FPS/CSC/20/69836,20528511AF,Enina,Darlington,Uhunmwangho,m,omoruyidarlington1@gmail.com,+234-7013428348#,NG,1998-11-06#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,edo,ovia-north-east
+E1118100,FAT/HIS/20/64288,20518088GA,Favour,Etiosa,Edokpayi,f,edokpayifavour6@gmail.com,+234-9072332250#,NG,2002-08-16#,courses registered,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,edo,ikpoba-okha
+E1118175,FED/GAC/20/62241,20528058IF,Marycomfort,Ozioma,Obinneji,f,obinnejiozioma@gmail.com,+234-7012288892#,NG,2001-06-13#,courses registered,ug_ft,BEDPOL,FED,GAC,300,2022,0,2020,anambra,ihiala
+E1118274,FMS/BAF/20/61675,21672244FF,John,Olsemene,Oamen,m,oamenjohn2020@gmail.com,+234-09159647403#,NG,2001-05-22#,returning,ug_ft,BSCBAF,FMS,BAF,300,2022,Z,2020,edo,esan-central
+E1118324,FSS/POL/20/69116,21287898DA,Gift,Itohan,Okogun,f,tomichlink2012@gmail.com,+234-07011748091#,NG,2000-08-04#,courses registered,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,edo,esan-west
+E1115840,FAT/MAC/20/66035,21380897GA,Emmanuel,Ehimare,Ayangbeso,m,cuteprince080822@gmail.com,+234-9063710051#,NG,2001-05-04#,courses registered,ug_ft,BAMAC,FAT,MAC,300,2022,0,2020,edo,esan-central
+E1115900,CMS/FBM/MLS/20/65627,20517161EA,Jeremiah,Oseyangbon,Oamen,m,oamenjeremiah21@gmail.com,+234-8158813691#,NG,2001-08-10#,returning,ug_ft,BMLS,FBM,MLS,300,2022,Z,2020,edo,esan-central
+E1115956,FMS/BAF/20/65414,21449537JF,Obinna,Peter,Uzoma,m,uzomaobinnapeter2727@gmail.com,+234-07049904145#,NG,2001-12-07#,school fee paid,ug_ft,BSCBAF,FMS,BAF,300,2022,0,2020,imo,orlu
+E1042052,FAG/ANS/15/18339,55867801IE,DESMOND,,TENUMAH,m,btthotel@yahoo.com,+234-09035069197#,NG,1997-12-21#,returning,ug_ft,BAGRANS,FAG,ANS,300,2022,Z,2015,delta,warri-south-west
+E1113652,FPS/CHM/19/53668,96449003BE,Abigail,Godwin,Edet,f,abigealedet@gmail.com,+234-09035950002#,NG,2000-05-25#,returning,ug_ft,BSCICH,FPS,CHM,300,2022,Z,2019,akwa,ibom-abak
+E1113880,CMS/FBM/PYS/19/56807,95633752AJ,Ofuwenbge,Naomi,Okpere,f,naomikpere8@gmail.com,+234-08121408594#,NG,2003-06-09#,school fee paid,ug_ft,BSCPYS,FBM,PYS,300,2022,0,2019,edo,esan-north-east
+E1118445,FMS/BUS/20/68526,20480671JA,Oghenemaro,Godsfavour,Edohor,m,Communitymaro@gmail.com,+234-08110456044#,NG,2002-04-22#,school fee paid,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,delta,isoko-south
+E1118461,FMS/BAF/20/68979,20577110CA,Destiny,,Ogaga-Oghene,m,ogagadestiny2020@gmail.com,+234-08133083055#,NG,2000-03-27#,courses registered,ug_ft,BSCBAF,FMS,BAF,300,2022,0,2020,delta,ethiope-east
+E1118505,FMS/BUS/20/66945,20526842IF,Godly,Ugiagbe,Alenkhe,m,marvelalen@gmail.com,+234-08148140923#,NG,2003-04-24#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,edo,oredo
+E1118518,FMS/BUS/20/69027,20561660DF,Daniel,Uchenna,Ibeh,m,uchelive2020@gmail.com,+234-09052473229#,NG,2002-01-04#,courses registered,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,imo,aboh-mbaise
+E1118532,FET/ELE/20/66493,21677147FA,Emmanuel,Igbaohimenvekho,Timothy,m,timothyemmanuel1to100@gmail.com,+234-08133499659#,NG,2000-04-10#,returning,ug_ft,BENGELE,FET,ELE,300,2022,Z,2020,edo,owan-west
+E1118543,FMS/ACC/20/63797,21356543EA,Gift,Onyinyechi,Chinedu,f,chinedugift1912@gmail.com,+234-08053053125#,NG,2002-12-19#,courses registered,ug_ft,BSCACC,FMS,ACC,300,2022,0,2020,ebonyi,afikpo-south
+E1118575,FSS/POL/20/64841,21325602IF,Edward,Ofa,Akintola,m,akintolaeddy@gmail.com,+234-08100042240#,NG,2000-09-20#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,edo,akoko-edo
+E1118616,CMS/FBM/ANA/20/68308,20563950IA,Emmanuel,Oshiobugie,Otsemheuno,m,otsemheunoemmanuel@gmail.com,+234-7037026383#,NG,2001-03-02#,returning,ug_ft,BSCANA,FBM,ANA,300,2022,Z,2020,edo,etsako-west
+E1118816,FSS/POL/20/64945,20517728FF,Kadijat,,Lawal,f,lawalkadijat222@gmail.com,+234-7080905547#,NG,2002-06-01#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,ondo,akoko-north-west
+E1118853,FMS/ACC/20/67125,20571093IF,Favour,Odinakachukwu,Anyingor,m,cyberlinksonline@gmail.com,+234-8157454418#,NG,1999-04-05#,school fee paid,ug_ft,BSCACC,FMS,ACC,300,2022,0,2020,ebonyi,ezza-south
+E1118860,FMS/BUS/20/68777,20580095BA,Osetie,Moses,Otoide,m,Kenoboy23@gmail.com,+234-0706516202#,NG,1999-02-02#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,edo,esan-west
+E1118961,FAT/HIS/20/68352,20571332DA,Osedebamen,,Esezobor,f,esezoborosedebamen@gmail.com,+234-08117953452#,NG,2003-01-09#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,edo,esan-west
+E1118989,FLS/MCB/20/66098,20414355CF,Abigail,Ese,Jakpor,f,jakporabigail789@gmail.com,+234-09044272828#,NG,2002-11-20#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2021,delta,udu
+E1119001,FAG/EES/20/63486,20387145DF,Riches,Chukwukadibia,Ogbugo,m,richesogbugo6@gmail.com,+234-07036700948#,NG,2003-08-12#,returning,ug_ft,BAGREES,FAG,EES,300,2022,Z,2020,delta,aniocha-north
+E1119006,FPS/CSC/20/68732,20578755GA,Frances,Ekpen,Iyoriobhe,f,ekpenfrances2020@gmail.com,+234-09068031763#,NG,2003-10-04#,school fee paid,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,edo,esan-west
+E1119011,FAT/HIS/20/66566,20563823FA,Victory,,Yusuf,f,yusufvictory2020@gmail.com,+234-08073885486#,NG,2001-05-23#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,edo,akoko-edo
+E1119016,FET/MEE/20/62380,20515590BA,Aimuanwosa,Timothy,Ehigie,m,ehigie.timothy@yahoo.com,+234-08131977550#,NG,2001-05-12#,courses registered,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,edo,uhunmwonde
+E1119046,FSS/POL/20/68803,20580156IF,Osifo,,Airiohuodion,m,ogbejielejoshua@gmail.com,+234-08132389724#,NG,1996-06-27#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,edo,esan-west
+E1119104,FET/IPE/20/68977,20567935BA,Stephen,Ezighode,Iribhogbe,m,iribhogbestephen2020@gmail.com,+234-8161673405#,NG,1998-06-23#,courses registered,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,edo,igueben
+E1119158,FES/ARC/20/68726,20384364HA,Ifechukwude,Confidence,Uwari,m,confidenceuwari2020@gmail.com,+234-09024374232#,NG,2001-06-03#,school fee paid,ug_ft,BSCARC,FES,ARC,300,2022,0,2020,delta,ika-north-east
+E1119211,FAT/RCS/20/66717,20520615GA,Gideon,,Obiluose,m,Obiluosegideon@gmail.com,+234-07014434394#,NG,2002-02-28#,returning,ug_ft,BARST,FAT,RCS,300,2022,Z,2020,edo,esan-central
+E1119235,CMS/FBM/ANA/20/67487,21723430FF,Titilayo,Omowumi,Adedipe,f,titilayoadedipe2@gmail.com,+234-08036224034#,NG,2002-11-06#,returning,ug_ft,BSCANA,FBM,ANA,300,2022,Z,2020,ondo,ifedore
+E1119247,FMS/PUB/20/61463,20575082JA,Ohioze,Fola,Agge,m,aggeohis@gmail.com,+234-9016301355#,NG,1997-03-27#,school fee paid,ug_ft,BSCPUB,FMS,PUB,300,2022,0,2020,edo,owan-west
+E1119259,FET/MEE/20/66695,20569199FF,Hafiz,Precious,Durojaiye,m,sweetlifenigeria@gmail.com,+234-08160982254#,NG,2001-06-04#,courses registered,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,kwara,offa
+E1119261,FAT/HIS/20/63773,20520135IF,Jennifer,Izeigbe,Ogbekhiulu,f,ogbekhiulujennifer@gmail.com,+234-09052900815#,NG,1999-01-24#,courses registered,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,edo,esan-west
+E1119428,FMS/PUB/20/61986,20569717DA,Joy,Odiomonafe,Kehinde,f,joytana18@gmail.com,+234-08147623093#,NG,2000-06-27#,courses registered,ug_ft,BSCPUB,FMS,PUB,300,2022,0,2020,edo,akoko-edo
+E1119464,FED/CAI/20/67263,20531213IA,Paul,Akhere,Inegbenoise,m,paulakhere169@gmail.com,+234-08113375230#,NG,1996-04-12#,returning,ug_ft,BEDBIO,FED,CAI,300,2022,Z,2020,edo,ikpoba-okha
+E1119486,FET/IPE/20/68964,20523219FF,Michael,Toritseju,Afejuku,m,afejukumichael32@gmail.com,+234-8025609898#,NG,2001-01-11#,returning,ug_ft,BENGIPE,FET,IPE,300,2022,Z,2020,delta,oshimili
+E1119494,FET/IPE/20/66497,20535253CA,Omokaro,Emmanuel,Igbinovia,m,omokaroigbinovia812@gmail.com,+234-08024810624#,NG,2001-03-09#,school fee paid,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,edo,ikpoba-okha
+E1119588,FES/ARC/20/63342,20516632CF,Efe,Fortune,Okorokporo,m,fortune_micheals@yahoo.com,+234-08050646926#,NG,2001-02-02#,school fee paid,ug_ft,BSCARC,FES,ARC,300,2022,0,2020,delta,uvwie
+E1119593,FMS/BAF/20/61899,21456911IF,Osegahale,Victor,Musa,m,wheezy260@icloud.com,+234-08172771288#,NG,2002-02-25#,courses registered,ug_ft,BSCBAF,FMS,BAF,300,2022,0,2020,edo,esan-central
+E1119616,FMS/BUS/20/67413,20523081IA,Osamudiamen,Favour,Ebhodaghe,m,osasfavour460@gmail.com,+234-09052349486#,NG,2002-03-18#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,edo,esan-north-east
+E1119620,FMS/BUS/20/65870,21335758DF,Jesimiel,Chinedu,Otuka,m,otukajesimiel@gmail.com,+234-8138120298#,NG,2002-03-29#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,abia,osisioma
+E1119623,FMS/BUS/20/65417,21462482GF,Victor,Ehichioya,Adudu,m,aduduvictor.2@gmail.com,+234-07068277869#,NG,2001-08-07#,courses registered,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,edo,esan-central
+E1119641,FET/AGE/20/65503,20542086FF,Daniel,Sextus,Uanzekin,m,gw14750@gmail.com,+234-09042562467#,NG,1998-12-10#,school fee paid,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,edo,owan-east
+E1119711,FSS/POL/20/61483,20529535BF,Moses,,Otoadese,m,marlianomozekeh@gmail.com,+234-07054390233#,NG,2001-03-08#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,edo,ikpoba-okha
+E1119715,FSS/POL/20/66409,21418118GA,Precious,Aishat,Jafar,f,preciousjafar@gmail.com,+234-09073909767#,NG,2003-11-09#,school fee paid,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,edo,etsako-west
+E1119752,FED/CAI/20/63228,20510840BA,Osazee,Nosakhare,Micheal,m,plutomania83@gmail.com,+234-08136279616#,NG,2002-02-16#,returning,ug_ft,BEDBIO,FED,CAI,300,2022,Z,2020,edo,oredo
+E1119758,FSS/POL/20/69421,20537153CA,Chukwuka,Stanley,Abanobi,m,stanleyabnobichukwuka@gmail.com,+234-08132203468#,NG,2001-06-05#,school fee paid,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,anambra,ihiala
+E1119763,FPS/CSC/20/63094,21358343GF,Prosper,Okoh,Alfa,m,alfaprosper1@gmail.com,+234-09021887546#,NG,2002-05-06#,courses registered,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,benue,ogbadibo
+E1119820,FLS/HND/20/63299,21274833JA,Sani,,Igbafe,m,igbafesani100@gmail.com,+234-09025243556#,NG,2002-04-10#,courses registered,ug_ft,BSCHND,FLS,HND,300,2022,0,2020,edo,etsako-west
+E1119828,FAT/TMA/20/67383,20513671BA,Esohe,Jovina,Osazuwa,f,jovinaosazuwa12@gmail.com,+234-07016394933#,NG,2000-12-12#,school fee paid,ug_ft,BATMA,FAT,TMA,300,2022,0,2020,edo,egor
+E1119849,FPS/CHM/20/65818,20509682AF,Osariemen,Margaret,Ighomon,f,ighomonm@gmail.com,+234-9038190357#,NG,2001-09-11#,returning,ug_ft,BSCCHM,FPS,CHM,300,2022,Z,2020,edo,oredo
+E1119855,FMS/BUS/20/68163,20536021HF,Obehi,Hope,Oyakhilome,f,obehioyakhilome2020@gmail.com,+234-8150243163#,NG,2002-01-30#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,edo,esan-north-east
+E1119883,FAG/SOS/20/62033,20549007DA,Aiseosa,,Omorodion,f,docomorodionaisosa@gmail.com,+234-9069491807#,NG,2002-10-27#,courses registered,ug_ft,BAGRSOS,FAG,SOS,300,2022,0,2020,edo,egor
+E1119892,FMS/ACC/20/64117,20524795GA,Gift,Esohe,Osemwegie,f,osemwegiegift4028@gmail.com,+234-8122569940#,NG,2003-10-24#,school fee paid,ug_ft,BSCACC,FMS,ACC,300,2022,0,2020,edo,oredo
+E1119925,FSS/POL/20/62632,20535013IA,Onyedikachi,Michael,Abalachum,m,Abalachummichael@gmail.com,+234-09077763607#,NG,1998-07-20#,school fee paid,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,imo,orlu
+E1119929,FED/EFM/20/68740,20449107CA,Favour,,Omashaye,f,luckyejovwo@gmail.com,+234-08167067421#,NG,1999-12-31#,courses registered,ug_ft,BEDEDM,FED,EFM,300,2022,0,2020,delta,udu
+E1119957,FMS/PUB/20/65483,20514413AF,Osarugue,,Egberawmen,f,egberawmenbecky@gmail.com,+234-09036215032#,NG,2003-05-09#,courses registered,ug_ft,BSCPUB,FMS,PUB,300,2022,0,2020,edo,egor
+E1119968,FLS/MCB/20/67469,20523564EA,Friday,Asuquo,Peace,f,peaceasuquo85@gmail.com,+234-09023977965#,NG,2000-12-11#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2020,akwa,ibom-ibesikpo-asutan
+E1120013,CMS/FBM/ANA/20/69436,21728276FA,Olajide,Michael,Ibrahim,m,lolajide26@gmail.com,+234-08056586031#,NG,2003-06-04#,courses registered,ug_ft,BSCANA,FBM,ANA,300,2022,0,2020,ondo,owo
+E1120044,FAG/ANS/20/64191,20551491FF,Nora,,Emofonmwan,f,norajoshua24@gmail.com,+234-8158186141#,NG,2002-10-24#,school fee paid,ug_ft,BAGRANS,FAG,ANS,300,2022,0,2020,edo,ikpoba-okha
+E1120236,FAT/HIS/20/67734,20510282EF,Kelvin,,Godwin,m,godwink306@gmail.com,+234-09050569689#,NG,2002-06-08#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,edo,uhunmwonde
+E1120252,FET/IPE/20/63274,20517276DF,Areghan,Oziegbe,David,m,areghandavid2@gmail.com,+234-09027982233#,NG,1999-07-28#,courses registered,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,edo,oredo
+E1120323,CMS/FBM/PYS/20/68603,20533051BA,Gracious,,Ikhayere,f,ikhasegracious@gmail.com,+234-7054642686#,NG,2002-07-07#,returning,ug_ft,BSCPYS,FBM,PYS,300,2022,Z,2020,edo,ikpoba-okha
+E1120368,FPS/CHM/20/63534,20391271CA,Ewere,Jennifer,Ekoma,f,humblescafe.ekoma@gmail.com,+234-7038359678#,NG,2001-06-16#,returning,ug_ft,BSCCHM,FPS,CHM,300,2022,Z,2020,delta,ika-south
+E1120402,FED/HKH/20/69302,21734758DF,Omowunmi,Omoyemeh,Omogbelehan,f,omoyemeh123@gmail.com,+234-08124672525#,NG,2000-05-30#,school fee paid,ug_ft,BEDHKE,FED,HKH,300,2022,0,2020,edo,esan-west
+E1120410,CMS/FBM/ANA/20/64330,20531377CA,Osaigbovo,Prosper,Isenmila-Itama,m,itamanosas07@gmail.com,+234-09064292568#,NG,2001-08-16#,returning,ug_ft,BSCANA,FBM,ANA,300,2022,Z,2020,edo,igueben
+E1123751,FSS/SOC/20/69132,21405595HA,Supreme,Omoefe,Akinyemi,m,akinyemisupreme1@gmail.com,+234-8051863410#,NG,2004-02-21#,courses registered,ug_ft,BSCSOC,FSS,SOC,300,2022,0,2020,edo,owan-west
+E1123773,FET/CIE/20/68335,21741794AF,Olalekan,Festus,Araromi,m,olamilekanfestus57@gmail.com,+234-09160602764#,NG,2000-07-27#,returning,ug_ft,BENGCIE,FET,CIE,300,2022,Z,2020,ondo,okitipupa
+E1123789,CMS/FBM/NSG/20/62160,20576215DA,God'Sown,,Aweh,m,gaweh92@gmail.com,+234-8139041822#,NG,2001-07-29#,returning,ug_ft,BSCNSG,FBM,NSG,300,2022,Z,2020,edo,akoko-edo
+E1123929,FED/GAC/20/67890,20418977JF,Meshach,,Saturday,m,saturdaymeshach@gmail.com,+234-08125875427#,NG,1999-10-27#,returning,ug_ft,BEDGAC,FED,GAC,300,2022,Z,2020,delta,ughelli-north
+E1123979,FAT/MAC/20/66029,20579141DA,Nelson,Edafe,Adogbeji,m,Adogbejinelson12@gmail.com,+234-08066088012#,NG,2003-10-13#,school fee paid,ug_ft,BAMAC,FAT,MAC,300,2022,0,2020,delta,ughelli-north
+E1124043,FED/GAC/20/65665,21664728BF,Augusta,Stella,Osekhai,f,stellaosekhai@gmail.com,+234-09159599004#,NG,1999-08-14#,returning,ug_ft,BEDGAC,FED,GAC,300,2022,Z,2020,edo,esan-north-east
+E1124077,FED/HKH/20/65526,21731552BA,Olanrewaju,Marvelous,Adebayo,m,marvelousadebayo85@gmail.com,+234-09036799926#,NG,2003-04-05#,returning,ug_ft,BEDHED,FED,HKH,300,2022,Z,2020,ondo,odigbo
+E1124089,FAT/MAC/20/65001,20156930JA,Chidubem,Uzodimma,Ekwueme,m,chidubemekwueme09@gmail.com,+234-08141993114#,NG,2002-04-14#,courses registered,ug_ft,BAMAC,FAT,MAC,300,2022,0,2020,imo,njaba
+E1124282,CMS/FBM/MLS/20/67433,20522248GF,Dominion,,Eminator,m,dominioneminator69@gmail.com,+234-07017224296#,NG,2000-04-27#,school fee paid,ug_ft,BMLS,FBM,MLS,300,2022,0,2020,edo,esan-north-east
+E1124319,FLS/MCB/20/66210,20531250IF,Obehi,Smile,Amankhu,f,obehiamankhu@gmail.com,+234-8074476257#,NG,2004-10-26#,school fee paid,ug_ft,BSCMCB,FLS,MCB,300,2022,0,2020,edo,ikpoba-okha
+E1124349,CMS/FBM/ANA/20/65638,20564460JF,Precious,,Oghie,f,preciousoghie1@gmail.com,+234-09079087703#,NG,2003-11-22#,returning,ug_ft,BSCANA,FBM,ANA,300,2022,Z,2020,edo,etsako-central
+E1124387,FMS/BUS/20/67533,20512870CF,Mary,Perere,Owei,f,oweimary926@gmail.com,+234-08051791736#,NG,2003-12-10#,courses registered,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,edo,ovia-north-east
+E1124441,FLS/MCB/20/64247,21647142HA,Onosen,Ruth,Unuigbe,f,unuigbeadebisi2@gmail.com,+234-8168164405#,NG,2005-01-16#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2020,edo,owan-west
+E1124448,FPS/CSC/20/63114,21638465EA,Precious,Osagie,Paul,m,Paulprecious569@gmail.com,+234-09078048134#,NG,2003-05-04#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,edo,esan-west
+E1124569,FLS/MCB/20/67082,20652688EA,Dora,Chisom,Ukpafe,f,ukpafedora59@gmail.com,+234-08105801013#,NG,2004-12-16#,courses registered,ug_ft,BSCMCB,FLS,MCB,300,2022,0,2020,edo,owan-east
+E1109817,FES/BLD/19/60534,95666594DF,Doris,Christopher,Usiobaifo,f,greatnigerian58@gmail.com,+234-9081435154#,NG,2002-12-22#,courses registered,ug_ft,BSCBLD,FES,BLD,300,2022,0,2019,edo,esan-central
+E1107434,CMS/FCS/MED/19/58611,95517849HA,Onyelukachukwu,David,Okolo,m,aauutme@gmail.com,,NG,2000-07-19#,courses registered,ug_ft,BSCHND,FLS,HND,300,2022,0,2019,delta,oshimili-south
+E1120793,FLS/HND/20/63707,20391469HF,Abigail,Somkelechukwu,Okwunne,f,okwunneabigail@gmail.com,+234-09028516792#,NG,2002-10-02#,school fee paid,ug_ft,BSCHND,FLS,HND,300,2022,0,2020,delta,ika-south
+E1120954,FLW/LAW/20/62952,20387637EF,Praise,Wendy-Chukwuebuniem,Asindi,f,asindiwendy3@gmail.com,+234-08076498950#,NG,2005-06-21#,returning,ug_ft,LLB,FLW,LAW,300,2022,Z,2020,delta,oshimili-south
+E1120977,FLW/LAW/20/62516,20381671EF,Monica,Akpevwe,Akpobi,f,akpobimonica10@gmail.com,+234-8122600257#,NG,2003-12-18#,courses registered,ug_ft,LLB,FLW,LAW,300,2022,0,2020,delta,ethiope-east
+E1121002,FAT/HIS/20/61941,20527575DA,Evans,Belemi,Robert,m,evansrobert321@gmail.com,+234-07041586181#,NG,2001-04-21#,school fee paid,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,edo,akoko-edo
+E1121033,FSS/POL/20/61291,20511299JA,Efosa,Destiny,Aigbetihimwian,m,aigbetihimwianefosa@gmail.com,+234-09153175539#,NG,2003-04-06#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,edo,oredo
+E1121062,FET/MME/20/61472,20567006JF,Emmanuel,Osaguwenro,Omorowa,m,omorowape@gmail.com,+234-08118301767#,NG,2002-05-18#,returning,ug_ft,BENGIPE,FET,IPE,300,2022,Z,2020,edo,orhionmwon
+E1121088,FLW/LAW/20/66423,21251232BA,Mercy,Oseluolemhen,Asiovu,f,ASIOVUMARIAN@GMAIL.COM,+234-8034152339#,NG,2005-07-15#,courses registered,ug_ft,LLB,FLW,LAW,300,2022,0,2020,edo,esan-north-east
+E1121121,FET/MME/20/62173,20256323HA,Prince,Perekeme,Ereboh,m,erebohprince@gmail.com,+234-07063624682#,NG,1999-04-29#,returning,ug_ft,BENGIPE,FET,IPE,300,2022,Z,2020,delta,bomadi
+E1121266,FLS/ZOO/20/63391,20409224DA,Eshiofune,Victory,Daniel,f,docvictorydaniel081@gmail.com,+234-8107584542#,NG,2002-06-26#,returning,ug_ft,BSCZOO,FLS,ZOO,300,2022,Z,2020,edo,etsako-east
+E1121301,FET/AGE/20/68976,20386510HF,O,George,Jonathan,m,lilnathie812@gmail.com,+234-07019345643#,NG,2004-01-10#,courses registered,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,imo,nkwerre
+E1121326,CMS/FBM/PYS/20/69250,20519027CA,Obianuju,,Chikwe,f,chikweobianuju20@gmail.com,+234-9138871822#,NG,2003-06-20#,courses registered,ug_ft,BSCPYS,FBM,PYS,300,2022,0,2020,imo,isiala-mbano
+E1121348,FED/VTE/20/69313,20536862FA,Blessing,,Agbons,f,abulawrence5@gmail.com,+234-07063916731#,NG,2001-06-17#,courses registered,ug_ft,BEDAGR,FED,VTE,300,2022,0,2020,edo,oredo
+E1121365,FSS/POL/20/69017,20442140IF,Oghenekaro,Christian,Obrike,m,obrikechristian2020@gmail.com,+234-08130132256#,NG,1997-06-12#,school fee paid,ug_ft,BSCPOL,FSS,POL,300,2022,0,2020,delta,isoko-south
+E1121441,FAT/HIS/20/66534,20512716DF,Beatrice,Osavbuonamen,Iserhienrhien,f,prettybeatrice2020@gmail.com,+234-09059821615#,NG,2004-05-22#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,edo,oredo
+E1121574,FLS/ZOO/20/64134,20535243HA,Jerry,Aisosa,Obaseki,m,obasekijerry89@gmail.com,+234-08052133289#,NG,2004-05-23#,returning,ug_ft,BSCZOO,FLS,ZOO,300,2022,Z,2020,edo,oredo
+E1121593,FAG/ANS/20/69390,20525811BF,Destiny,Chisom,Ehianu,m,Ehianujustice@gmail.com,+234-9046959470#,NG,2004-01-14#,courses registered,ug_ft,BAGRANS,FAG,ANS,300,2022,0,2020,delta,ika-north-east
+E1121615,FLS/ZOO/20/67207,20571390CF,Aisha,Fortunate,Sheidu,f,aishasheidu564@gmail.com,+234-09076413412#,NG,2002-10-23#,returning,ug_ft,BSCZOO,FLS,ZOO,300,2022,Z,2020,kogi,ogori/magongo
+E1121644,FED/CAI/20/66988,20529428HF,Stephanie,,Efosa,f,efosastephanie004@gmail.com,+234-09010767209#,NG,2001-05-14#,returning,ug_ft,BEDPHY,FED,CAI,300,2022,Z,2020,edo,orhionmwon
+E1121867,CMS/FBM/MLS/20/68665,20383337HF,Kenechukwu,Daniella,Anazia,f,daniellaanazia@gmail.com,+234-9030166248#,NG,2003-07-29#,returning,ug_ft,BMLS,FBM,MLS,300,2022,Z,2020,delta,aniocha-north
+E1121876,FET/AGE/20/63031,20519731BF,Samuel,,Idedia,m,idediasamuel9@gmail.com,,NG,2001-02-15#,returning,ug_ft,BENGIPE,FET,IPE,300,2022,Z,2020,edo,esan-west
+E1121901,FLS/MCB/20/68799,20569728HA,Marvelous,,Ogbeide,m,link2justus@gmail.com,+234-7025376661#,NG,2002-06-06#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2020,edo,esan-central
+E1121920,FET/ELE/20/64968,20567597IF,Emmanuel,,Akhimien,m,akhimienemmanuel988@gmail.com,+234-09057364772#,NG,2003-06-02#,returning,ug_ft,BENGELE,FET,ELE,300,2022,Z,2020,edo,esan-west
+E1122010,FED/CAI/20/67213,21706984BF,Mary,Omobosede,Irabor,f,iraborm14@gmail.com,+234-08148404464#,NG,2002-06-02#,returning,ug_ft,BEDENG,FED,CAI,300,2022,Z,2020,edo,esan-west
+E1122080,FET/CIE/20/62012,21277537GA,Ayemoba,Paul,Adoyomi,m,ayemobapaul13@gmail.com,+234-7088598459#,NG,2003-07-21#,returning,ug_ft,BENGCIE,FET,CIE,300,2022,Z,2020,edo,etsako-east
+E1122086,FED/LIS/20/66127,20423150DF,Glory,Oritsebemigho,Ebiekutan,f,riellawilliams880@gmail.com,+234-07086395457#,NG,2002-10-15#,school fee paid,ug_ft,BSCLIS,FED,LIS,300,2022,0,2020,delta,oshimili
+E1122091,FED/EFM/20/69424,21719705GA,Chikodili,Kelvin,Emmanuel,m,emmanuelkelvinchikodili2020@gmail.com,+234-08121582247#,NG,2003-07-31#,school fee paid,ug_ft,BEDHIS,FED,EFM,300,2022,0,2020,enugu,ezeagu
+E1122096,FET/MEE/20/66060,20510400CF,Emmanuel,,Adamu,m,emmanueladmu346@gmail.com,+234-07050224053#,NG,2004-03-08#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,edo,etsako-east
+E1122110,CMS/FBM/PYS/20/64029,20594425IF,Deborah,,Omobode,f,arikeomobode@gmail.com,+234-07062647395#,NG,2001-12-10#,returning,ug_ft,BSCPYS,FBM,PYS,300,2022,Z,2020,kogi,kabba/bunu
+E1122130,FPS/CHM/20/69438,21735125AF,Desola,Blossom,Akinyosoye,f,blossomakinyosoye@gmail.com,+234-8135140822#,NG,2002-07-12#,courses registered,ug_ft,BSCICH,FPS,CHM,300,2022,0,2020,ondo,okitipupa
+E1122145,FED/GAC/20/63785,20569920GA,Aimanere,Joseph,Jerome,m,jeromejoseph2020@yahoo.com,+234-08163161434#,NG,2003-04-11#,school fee paid,ug_ft,BEDPOL,FED,GAC,300,2022,0,2020,edo,akoko-edo
+E1122149,FED/GAC/20/66850,20528169AF,Success,,Olusa,m,olusasuccess27@gmail.com,+234-08141723804#,NG,2002-04-03#,returning,ug_ft,BEDPOL,FED,GAC,300,2022,Z,2020,ondo,akoko-north-west
+E1122194,FMS/ACC/20/67460,22248274CA,Blessing,Eseosa,Akhere,f,blessingakhere2020@gmail.com,+234-08103597052#,NG,2003-05-29#,school fee paid,ug_ft,BSCACC,FMS,ACC,300,2022,0,2020,edo,esan-west
+E1122222,FPS/CHM/20/62800,20527889HF,Osayamen,Hannah,Okuiomose,f,okuiomosehannah@gmail.com,+234-08122891968#,NG,2004-02-16#,school fee paid,ug_ft,BSCICH,FPS,CHM,300,2022,0,2020,edo,orhionmwon
+E1122323,FAT/FRN/20/69329,20393919IA,Oghenevwarho,Hope,Edehwosa,f,edehwosaoghenevwarhohope119@gmail.com,+234-8080377371#,NG,2002-11-06#,returning,ug_ft,BAFRN,FAT,FRN,300,2022,Z,2020,delta,ethiope-east
+E1122369,FPS/CSC/20/63027,20567655IA,Lugard,Eromonsele,Uwadiale,m,itzlugard@gmail.com,+234-07053207354#,NG,2004-08-16#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,edo,esan-central
+E1122492,FES/BLD/20/69126,20748104FA,Emmanuel,Uyi,Akharayi,m,Emmanuelakharayi@gmail.com,+234-8037007885#,NG,2004-07-11#,returning,ug_ft,BSCBLD,FES,BLD,300,2022,Z,2020,edo,uhunmwonde
+E1122575,FMS/BUS/20/64597,20517759JA,Favour,,Igiebor,m,igieborfavour36@gmail.com,+234-09056318712#,NG,2003-08-10#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,edo,orhionmwon
+E1122663,FMS/BUS/20/66182,20571744GA,Wisdom,,Akinola,f,yomnetcyber@gmail.com,+234-08158662975#,NG,2002-11-15#,courses registered,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,ondo,ose
+E1122703,FED/CAI/20/67959,20525697BF,Queen,,Oare,f,queenoare275@gmail.com,+234-7047219182#,NG,2000-12-12#,returning,ug_ft,BEDCHM,FED,CAI,300,2022,Z,2020,edo,esan-west
+E1122731,FSS/PSY/20/69320,21724996BF,Oyinkansola,Ayobami,Kikiowo,f,haryurbarmie18@gmail.com,+234-08108900497#,NG,2000-06-14#,returning,ug_ft,BSCPSY,FSS,PSY,300,2022,Z,2020,ondo,akure
+E1122829,FPS/PHY/20/62535,20572038BF,Ayomide,Sifau,Azeez,f,ayomideazeez2009@gmail.com,+234-8116990307#,NG,2003-10-10#,returning,ug_ft,BSCAPHY,FPS,PHY,300,2022,Z,2020,osun,irepodun
+E1122867,FED/CAI/20/64765,20525229HF,Clinton,,Ehiorobo,m,johnclinton1112@gmail.com,+234-09028821776#,NG,2002-11-12#,returning,ug_ft,BEDPHY,FED,CAI,300,2022,Z,2020,edo,orhionmwon
+E1122890,FLS/HND/20/65524,21717149BF,Mary,Adeola,Shadare,f,negamaryshadare@gmail.com,+234-7025260176#,NG,2000-10-04#,courses registered,ug_ft,BSCHND,FLS,HND,300,2022,0,2020,ekiti,ilejemeje
+E1122912,CMS/FBM/ANA/20/65053,20515070EF,Osaigwe,Grandeur,Edefoh,m,edefohgrandeur@gmail.com,+234-09029055081#,NG,2003-05-26#,courses registered,ug_ft,BSCANA,FBM,ANA,300,2022,0,2020,edo,esan-south-east
+E1122969,FET/MME/20/68955,20541255DA,Odion,,Airhihenbuwa,m,odionfelix123@gmail.com,+234-07050346393#,NG,1980-08-15#,school fee paid,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,edo,ikpoba-okha
+E1123001,FET/MEE/20/67233,20525085DF,Daniel,Ifeakachukwu,Olise,m,youngcranky59@gmail.com,+234-09068392041#,NG,2001-06-20#,courses registered,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,delta,ndokwa-west
+E1123040,FET/ELE/20/64366,21468449GA,Eveshotomete,Naomi,Daniel,f,dantomete2003@gmail.com,+234-07030896290#,NG,2003-04-08#,courses registered,ug_ft,BENGELE,FET,ELE,300,2022,0,2020,edo,akoko-edo
+E1123057,FET/MEE/20/61945,20511767DA,Felix,Abraham,Jegede,m,Larrytrillions884@gmail.com,+234-09050820430#,NG,2002-11-22#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,edo,uhunmwonde
+E1123066,CMS/FBM/MLS/20/61944,21280905DF,Peter,Promise,Oshiafi,m,Oshiafipeter@gmail.com,+234-08163532829#,NG,2003-12-17#,returning,ug_ft,BMLS,FBM,MLS,300,2022,Z,2020,edo,etsako-west
+E1123233,FET/CIE/20/62017,21707719EF,Sunday,,Oladosu,m,Sundayoladosu447@gmail.com,+234-7026067554#,NG,2002-09-08#,school fee paid,ug_ft,BENGCIE,FET,CIE,300,2022,0,2020,ekiti,ekiti-west
+E1123261,FED/CAI/20/61708,20422915HA,Favour,Omoyemi,Ekundayo,f,favourekundayo16@gmail.com,+234-08127117173#,NG,2002-09-17#,courses registered,ug_ft,BEDPHY,FED,CAI,300,2022,0,2020,ekiti,ikole
+E1123276,FAG/ANS/20/68058,20533095HF,Blessing,Ginikachukwu,Makata,f,blessingmakata312@gmail.com,+234-8064493769#,NG,2000-02-10#,courses registered,ug_ft,BAGRANS,FAG,ANS,300,2022,0,2020,enugu,udenu
+E1123443,FLW/LAW/20/61477,20506939EA,Samuel,Orumuah,Imonitie,m,justwest2211@gmail.com,+234-09168796070#,NG,2002-07-15#,returning,ug_ft,LLB,FLW,LAW,300,2022,Z,2020,edo,etsako-west
+E1123448,FED/EFM/20/67462,20451393IF,Marian,Arodovweogene,Adurojaiye,f,adurojaiyemarian2003@gmail.com,+234-07030222192#,NG,2003-05-26#,courses registered,ug_ft,BEDHIS,FED,EFM,300,2022,0,2020,edo,akoko-edo
+E1123456,FED/EFM/20/67675,20507552BF,Esasa,Jennifer,Emovon,f,emovonesosa6@gmail.com,+234-7055474152#,NG,2004-01-16#,returning,ug_ft,BEDRSE,FED,EFM,300,2022,Z,2020,edo,egor
+E1123483,FLS/MCB/20/63538,20388197JF,Peace,Chukwudumebi,Esezobor,f,esezoborpeace2020@gmail.com,+234-07019315236#,NG,2003-12-26#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2020,edo,esan-north-east
+E1123635,FSS/POL/20/65421,21582311IF,Joshua,Damilare,Akosile,m,billajoshy@gmail.com,+234-7086172598#,NG,2005-01-26#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,ekiti,ado-ekiti
+E1123656,FAT/TMA/20/64718,20521862JF,Emioluwa,,Bazuaye,f,emioluwabazuaye@gmail.com,+234-09076177308#,NG,2002-02-22#,returning,ug_ft,BATMA,FAT,TMA,300,2022,Z,2020,edo,ovia-north-east
+E1123692,FPS/CSC/20/67936,20509422HA,Emeka,Stanley,Obaze,m,faydbest1988@gmail.com,+234-08078180107#,NG,2001-11-20#,courses registered,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,delta,oshimili-south
+E1123717,FAG/ANS/20/68407,20579634DF,Joel,Osemudiamen,Imhanlaerie,m,cyberlinksonline@gmail.com,+234-9069245330#,NG,2003-06-19#,returning,ug_ft,BAGRANS,FAG,ANS,300,2022,Z,2020,edo,igueben
+E1102392,FMS/BAF/19/59752,95702791IE,Jenkins,Solomon,Ebhomielen,m,ebhomielenjenkins7@gmail.com,+234-08165890730#,NG,2000-12-13#,returning,ug_ft,BSCBAF,FMS,BAF,300,2022,Z,2019,edo,esan-north-east
+E1087588,FMS/BAF/18/47367,85251356BC,Peace,,Itete,m,itete1234peace@gmail.com,+234-07012541955#,NG,1997-05-05#,returning,ug_ft,BSCBAF,FMS,BAF,300,2022,0,2018,delta,okpe
+E1088082,FPS/CSC/18/50182,86877096EJ,David,Kingsley,Ikiomogbe,m,ikiomogbedavid@yahoo.com,+234-08129736386#,NG,2001-12-10#,courses registered,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2018,edo,etsako-central
+E1089415,FED/BED/18/42106,85322058EF,David,Ohiwahemen,Akalakini,m,gtonlineservice@gmail.com,+234-09022107012#,NG,2000-01-11#,returning,ug_ft,BEDACC,FED,BED,300,2022,Z,2018,edo,owan-west
+E1124632,FSS/ECO/20/64935,20417402IF,Anointed,Oghenemaro,Meshack,m,meshackanointed422@gmail.com,+234-9160140281#,NG,2003-10-10#,courses registered,ug_ft,BSCECO,FSS,ECO,300,2022,0,2020,delta,isoko-south
+E1124735,FPS/CSC/20/65549,21256486FF,Paul,Chukwunedum,Achudume,m,paulachudume7@gmail.com,+234-09071695810#,NG,2003-07-06#,courses registered,ug_ft,BSCCSC,FPS,CSC,300,2022,0,2020,delta,ukwuani
+E1124781,FET/AGE/20/62383,20561595HF,Joshua,,Odamah,m,joshuaodamah@gmail.com,+234-09091872647#,NG,2004-07-14#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,edo,etsako-central
+E1124795,FET/ELE/20/62822,20511735JF,Miracle,,Omoragbon,m,omoragbonmiracle774@gmail.com,+234-9067867917#,NG,2003-03-03#,returning,ug_ft,BENGELE,FET,ELE,300,2022,0,2020,edo,ikpoba-okha
+E1124854,CMS/FBM/NSG/20/63825,20537609CA,Chukwudumebi,Stephanie,Ejenobi,f,stephanieejenobi@gmail.com,+234-07064919478#,NG,2003-06-20#,school fee paid,ug_ft,BSCNSG,FBM,NSG,300,2022,0,2020,anambra,anaocha
+E1125000,FED/CAI/20/64130,20517612GF,Angel,Imuetinyan,Felix,f,Felixangelimuetinyan@gmail.com,+234-07038107042#,NG,2005-03-27#,returning,ug_ft,BEDENG,FED,CAI,300,2022,Z,2020,edo,oredo
+E1125021,FET/MEE/20/68844,20571310EF,Jamiu,,Umoru,m,ogbejielejoshua@gmail.com,+234-09157983892#,NG,2003-06-13#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2020,edo,owan-east
+E1125022,FED/EFM/20/65356,21271658AF,Osas,Daniel,Ebesunun,m,ebesunundaniel08@gmail.com,+234-08055771410#,NG,2000-05-13#,courses registered,ug_ft,BEDEDM,FED,EFM,300,2022,0,2020,edo,igueben
+E1125043,FET/IPE/20/66610,20579762GA,Jeffrey,Itua,Agbonhiebuele,m,cybobolism@gmail.com,+234-07054664939#,NG,2003-01-14#,returning,ug_ft,BENGIPE,FET,IPE,300,2022,Z,2020,edo,esan-north-east
+E1125083,FSS/ECO/20/65709,21299811DA,Desmond,Tomiwa,Aikhuele,m,aikhueletomiwa@gmail.com,+234-09159086958#,NG,2004-06-21#,returning,ug_ft,BSCECO,FSS,ECO,300,2022,Z,2020,edo,esan-west
+E1125094,FED/GAC/20/69227,20572066GF,Christopher,Osejie,Aigbokhae,m,anyitech.cybercafe2015@gmail.com,+234-08132383876#,NG,2004-05-27#,returning,ug_ft,BEDPOL,FED,GAC,300,2022,Z,2020,edo,esan-central
+E1125142,FPS/MTH/20/68317,20512641DA,Oshogwe,Osasenaga,Aipoh,m,aipohoshogwe@gmail.com,+234-8167714456#,NG,2002-12-12#,returning,ug_ft,BSCMTH,FPS,MTH,300,2022,Z,2020,edo,etsako-east
+E1125241,FPS/PHY/20/68340,21665518FF,Destiny,Nediyeval,Richard,m,destinyrichard5002@gmail.com,+234-09079061861#,NG,2005-02-14#,courses registered,ug_ft,BSCPHY,FPS,PHY,300,2022,0,2020,cross,river-abi
+E1125336,FMS/PUB/20/65821,20749616JA,Success,Uwayemen,Eghobor,f,Succeseghobor4@gmail.com,+234-08151774802#,NG,2004-01-10#,returning,ug_ft,BSCPUB,FMS,PUB,300,2022,0,2020,edo,esan-west
+E1125359,FED/CAI/20/63216,21423475GF,Mercy,Eneya,Olorunfemi,f,olorunfemimercy777@gmail.com,+234-08136169403#,NG,2004-01-28#,returning,ug_ft,BEDENG,FED,CAI,300,2022,Z,2020,edo,akoko-edo
+E1125961,CMS/FBM/NSG/20/63743,29771308AF,RAHIMAT,,SUMAILA,f,rahimatsumaila@gmail.com,+234-08138400622#,NG,2002-06-05#,school fee paid,ug_ft,BSCNSG,FBM,NSG,300,2022,0,2020,edo,etsako-west
+E1126024,FSS/POL/20/65105,20550321BF,Emmanuel,Aisosa,Omoruyi,m,omoruyiemmanuel56@gmail.com,+234-9074029504#,NG,2004-03-07#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,edo,oredo
+E1126045,FMS/BAF/20/68824,22072047DA,Christopher,Enorekphenme,Edwin,m,edwinchris46@gmail.com,+234-08085243729#,NG,2004-02-28#,courses registered,ug_ft,BSCBAF,FMS,BAF,300,2022,0,2020,edo,esan-west
+E1126046,FMS/BUS/20/68602,20528456JA,Felix,Osazee,Adoghe,m,felixosazee694@gmail.com,+234-08160257442#,NG,2003-10-24#,school fee paid,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2020,edo,igueben
+E1126057,FAT/HIS/20/69427,21688180IA,Greatness,Okem,Samson,f,greatnesssamson55@gmail.com,+234-8133609904#,NG,2002-12-15#,returning,ug_ft,BAHIS,FAT,HIS,300,2022,Z,2020,edo,etsako-west
+E1126093,FED/GAC/20/69177,20382700DA,Chinonso,Anthony,Ifeanyi,m,ifeanyichinonso2020@gmail.com,+234-09096550493#,NG,2004-03-01#,returning,ug_ft,BEDPOL,FED,GAC,300,2022,Z,2020,imo,mbaitoli
+E1126094,FMS/ACC/20/68761,20526003AF,Bryan,Uyi,Idahosa,m,idahosa.bryan123@gmail.com,+234-8112673055#,NG,2003-05-20#,returning,ug_ft,BSCACC,FMS,ACC,300,2022,Z,2020,edo,oredo
+E1126128,CMS/FBM/MLS/20/67986,22058150HA,Mojisola,Victoria,Olapo,f,olapojulius@gmail.com,+234-9024643079#,NG,2004-01-14#,courses registered,ug_ft,BMLS,FBM,MLS,300,2022,0,2020,ogun,ado-odo/ota
+E1126150,FPS/CSC/20/66814,20533936FA,Jeffery,Esheshumua,Okhemesimi,m,theo.basil@yahoo.co.uk,+234-08062760771#,NG,2003-10-04#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,edo,etsako-west
+E1126165,FET/MEE/20/68798,20442684CF,Oghenekevwe,Roland,Imitini,m,imitiniroland@gmail.com,+234-9011490903#,NG,2002-04-21#,courses registered,ug_ft,BENGMEE,FET,MEE,300,2022,0,2020,delta,ughelli-north
+E1126194,FSS/POL/20/61513,20583047HA,Solomon,,Samuel,m,oroshiakose@gmail.com,+234-08105023094#,NG,2003-03-07#,returning,ug_ft,BSCPOL,FSS,POL,300,2022,Z,2020,edo,akoko-edo
+E1126207,FED/EFM/20/64550,20511153GA,Jennifer,,Omorodion,f,jenniferomorodion10@gmail.com,+234-09114119486#,NG,2002-07-10#,returning,ug_ft,BEDEDM,FED,EFM,300,2022,Z,2020,edo,oredo
+E1120454,FLW/LAW/20/64280,20512453CA,Muhammad-Mukhtar,Alama,Omosah,m,axamany@gmail.com,+234-07052014404#,NG,1999-11-30#,courses registered,ug_ft,LLB,FLW,LAW,300,2022,0,2020,edo,etsako-west
+E1097205,FET/CIE/18/48190,86412365GB,Damilola,Nansel,Dangin,m,damiloladangin@yahoo.com,+234-7088891474#,NG,2002-05-07#,school fee paid,ug_ft,BENGCIE,FET,CIE,300,2022,0,2018,plateau,langtang-south
+E1137088,FAT/ENG/21/72668,19716845GF,NKECHI,,OSSAI,f,ossainkechi2030@gmail.com,+234-07061957719#,NG,1999-12-20#,school fee paid,ug_ft,BAENG,FAT,ENG,300,2022,0,2021,delta,ndokwa-west
+E1126265,FPS/CSC/20/67193,20548978IA,Courage,Orobosa,Aibangbe,m,Shugareg@gmail.com,+234-9056807997#,NG,2003-06-05#,returning,ug_ft,BSCCSC,FPS,CSC,300,2022,Z,2020,edo,ikpoba-okha
+E1126353,FMS/PUB/20/67173,20783775BA,Zechariah,Junior,Austine,m,zachariahaustine@outlook.com,+234-7056257738#,NG,2004-06-26#,returning,ug_ft,BSCPUB,FMS,PUB,300,2022,Z,2020,kaduna,chikun
+E1126392,FMS/PUB/20/62014,20412990BA,Oghenerukevwe,Marvelous,Onotevure,f,rukevwerukky571@gmail.com,+234-08168596685#,NG,2000-07-17#,courses registered,ug_ft,BSCPUB,FMS,PUB,300,2022,0,2020,delta,ughelli-north
+E1126393,FES/FAA/20/67502,20517978EA,Sheriff,Abiodun,Ogunsanya,m,sheriffogunsanya494@gmail.com,+234-08114914071#,NG,2002-12-25#,returning,ug_ft,BSCFAA,FES,FAA,300,2022,Z,2020,lagos,lagos-island
+E1126395,FED/CAI/20/68846,20577258EA,Luke,,Evhoesor,m,lukechrist18@gmail.com,+234-08114538475#,NG,2002-03-11#,school fee paid,ug_ft,BEDBIO,FED,CAI,300,2022,0,2020,edo,etsako-central
+E1126442,FAT/HIS/20/62186,20507380CA,Deborah,Daniella,Omokoje,f,maryayoolaomokoje@yahoo.com,+234-09125210353#,NG,2005-07-09#,school fee paid,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,edo,etsako-east
+E1126478,FLS/MCB/20/63478,20576049AF,Precious,,Sadoh,f,monelcomputers@gmail.com,+234-08111681912#,NG,2002-12-12#,returning,ug_ft,BSCMCB,FLS,MCB,300,2022,Z,2020,edo,esan-north-east
+E1126530,FET/ELE/20/64573,20575038CF,Obosa,,Osarobo,m,osaroboobosa54@gmail.com,+234-08164822493#,NG,2001-10-27#,returning,ug_ft,BENGELE,FET,ELE,300,2022,Z,2020,edo,uhunmwonde
+E1126543,FMS/BUS/20/63397,20566965BF,Happiness,Omom,Erabhahiemen,f,erabhahiemehappiness@mail.come,+234-08076671432#,NG,2000-05-05#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,edo,esan-north-east
+E1126644,FAT/HIS/20/66195,20409780AF,Wilson,Emamuzo,Panama,m,wilsonpanama14@gmail.com,+234-09063713940#,NG,1998-01-08#,courses registered,ug_ft,BAHIS,FAT,HIS,300,2022,0,2020,delta,isoko-south
+E1126714,FLS/ZOO/20/63277,20506822FF,Favour,,Egbodion,m,odionosejie@gmail.com,+234-9011637433#,NG,2003-09-26#,courses registered,ug_ft,BSCZOO,FLS,ZOO,300,2022,0,2020,edo,esan-west
+E1126745,FAG/EES/20/69393,20515588CA,Endurance,Isoken,Omokaro,f,omokaroendurance10@gmail.com,+234-09058515427#,NG,2002-02-03#,returning,ug_ft,BAGREES,FAG,EES,300,2022,Z,2020,edo,egor
+E1127039,FSS/SOC/20/66480,20386095GA,Chibuike,Franklin,Ezeude,m,Ezeudefranklin@gmail.com,+234-07039419674#,NG,2001-09-18#,courses registered,ug_ft,BSCSOC,FSS,SOC,300,2022,0,2020,enugu,aninri
+E1127052,FMS/BUS/20/66481,20446275CF,Toby,Ufuoma,Elohor,m,telohortrake@gmail.com,+234-09039267433#,NG,1997-11-23#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2020,delta,warri-central
+E1127075,CMS/FBM/PYS/20/67783,20388335HA,Favour,Evi,Daniel,f,julietnwebe19@gmail.com,+234-08037849339#,NG,2020-02-16#,courses registered,ug_ft,BSCPYS,FBM,PYS,300,2022,0,2020,delta,isoko-north
+E1127131,CMS/FBM/PYS/20/66038,20438960CF,Oritsetsemaye,Theresa,Eda,f,habellzee@gmail.com,+234-08101314450#,NG,2003-09-27#,courses registered,ug_ft,BSCPYS,FBM,PYS,300,2022,0,2020,delta,warri-north
+E1127156,FSS/PSY/20/69268,20412138JA,Miracle,Oghenero,Olobio,m,oghenerojames59@gmail.com,+234-09067217439#,NG,2002-06-17#,courses registered,ug_ft,BSCPSY,FSS,PSY,300,2022,0,2020,bayelsa,sagbama
+E1127276,FED/BED/20/69175,20540635JA,Daniel,,Ohikhena,m,danielohikhena4@gmail.com,+234-07043987301#,NG,2000-04-27#,returning,ug_ft,BEDOTM,FED,BED,300,2022,Z,2020,edo,ikpoba-okha
+E1127302,FAT/TMA/20/68551,20518963FF,Moses,,Oluwatosin,m,oluwatosinmoses544@gmail.com,+234-8057972979#,NG,2002-03-28#,courses registered,ug_ft,BATMA,FAT,TMA,300,2022,0,2020,edo,akoko-edo
+E1127351,FET/AGE/20/63379,20393424IF,Emmanuel,,Okoro,m,eokoro291@gmail.com,+234-9168841976#,NG,2002-12-26#,school fee paid,ug_ft,BENGIPE,FET,IPE,300,2022,0,2020,delta,ika-north-east
+E1127352,FMS/ACC/20/64232,20389736JF,Promise,,Anuoluwa,f,prommysammy@gmail.com,+234-09015138578#,NG,2002-03-17#,school fee paid,ug_ft,BSCACC,FMS,ACC,300,2022,0,2020,edo,akoko-edo
+E1136587,FLW/LAW/21/71795,19758921DE,DIVINE,NYEROVWO,OTOBO,m,otobo0077@gmail.com,+234-07053430946#,NG,1999-11-27#,returning,ug_ft,LLB,FLW,LAW,300,2022,Z,2021,delta,ughelli-north
+E1081642,FLW/LAW/17/40894,75351781FD,Precious,Ifechukwude,Praise,f,emeraldife04@gmail.com,+234-09023845786#,NG,1999-10-26#,returning,ug_ft,LLB,FLW,LAW,300,2022,Z,2017,edo,orhionmwon
+E1069736,CMS/FBM/NSG/16/30574,66645406IF,LOVETH,,BELLO,f,OGBEJIELEJOSHUA@GMAIL.COM,+234-7050718375#,NG,1994-05-25#,returning,ug_ft,BSCHND,FLS,HND,300,2022,0,2016,edo,esan-west
+E1133094,FMS/ACC/21/74790,11302996HIU,Juliet,,Obotha,f,julielucky275@gmail.com,+234-9058017668#,NG,2001-07-27#,school fee paid,ug_ft,BSCACC,FMS,ACC,300,2022,0,2021,delta,isoko-north
+E1133122,FET/ELE/21/82074,19721494IG,MARVELLOUS,OSAZE,AGBONHIBUELE,m,demarvelousventure@gmail.com,+234-09028896895#,NG,2003-09-26#,courses registered,ug_ft,BENGELE,FET,ELE,300,2022,0,2021,edo,igueben
+E1133123,FMS/BUS/21/73814,19724313GI,OSAJIEDUWA,,AGBONKPOLOR,m,climaxnigeria@yahoo.com,+234-07033289531#,NG,1995-01-24#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,0,2021,edo,uhunmwonde
+E1133128,FMS/BAF/21/69882,11331356GHU,David,Ehimen,Aguinede,m,cybernet.edu@gmail.com,+234-08154394277#,NG,1991-04-20#,returning,ug_ft,BSCBAF,FMS,BAF,300,2022,Z,2021,edo,esan-west
+E1133144,FMS/ACC/21/73802,19704344CJ,OSEMUDIAMEN,,AKHARENEGBE,m,tomichlink2012@gmail.com,+234-9055476008#,NG,2001-10-07#,returning,ug_ft,BSCACC,FMS,ACC,300,2022,Z,2021,edo,esan-west
+E1133204,FET/MEE/21/74935,19770817EC,ENEYE,,COLLEGE,m,jamesperekpo668@gmail.com,+234-08142985181#,NG,2000-04-10#,courses registered,ug_ft,BENGMEE,FET,MEE,300,2022,0,2021,delta,burutu
+E1133213,FMS/ACC/21/74096,19720071IH,EFE,GIFT,EBHOMAN,f,climaxnigeria@yahoo.com,+234-08116842212#,NG,2000-03-09#,returning,ug_ft,BSCACC,FMS,ACC,300,2022,Z,2021,edo,esan-west
+E1133258,FMS/BUS/21/77262,19724544FE,FAVOUR,OMONIGHO,EROMOSELE,f,anyitech.cybercafe2015@gmail.com,+234-07063728164#,NG,1999-11-14#,returning,ug_ft,BSCBUS,FMS,BUS,300,2022,Z,2021,edo,esan-west
+E1133301,CMS/FBM/MLS/21/74848,19722038AG,RACHAEL,ADERONKE,ILESANMI,f,aderonkeilesanmi8@gmail.com,+234-8029539893#,NG,2003-08-26#,returning,ug_ft,BMLS,FBM,MLS,300,2022,Z,2021,ekiti,ekiti-west
+E1133333,CMS/FBM/MLS/21/71763,19703801AJ,SARAH,,JOHNSON,f,johnsonsarah3103@gmail.com,+234-09031681903#,NG,1998-09-15#,courses registered,ug_ft,BMLS,FBM,MLS,300,2022,0,2021,delta,ughelli-south
+E1133400,FET/CIE/21/73056,19708456BC,MONDAY,CALEB,OJOMAH,m,tomichlink2012@gmail.com,+234-09060794078#,NG,1999-08-15#,courses registered,ug_ft,BENGCIE,FET,CIE,300,2022,0,2021,kogi,ibaji
+E1133401,CMS/FBM/MLS/21/72894,19716945FG,WILLIAMS,ENDURANCE,OJOMAH,m,tomichlink2012@gmail.com,+234-08143743578#,NG,2001-09-19#,courses registered,ug_ft,BMLS,FBM,MLS,300,2022,0,2021,kogi,ibaji
+E1133418,FMS/ACC/21/73993,19705025CD,OGHENEFEJIRO,,OKOTIE,f,oghenefejirookotie4life@yahoo.com,+234-08029445178#,NG,2001-05-27#,school fee paid,ug_ft,BSCACC,FMS,ACC,300,2022,0,2021,delta,ughelli-north
+E1133453,FET/MEE/21/72333,19726772GD,CHIGAEMEZU,HENRY,ONWUBUARIRI,m,hc7035069@gmail.com,+234-07081895228#,NG,2000-09-13#,returning,ug_ft,BENGMEE,FET,MEE,300,2022,Z,2021,imo,isu
+E1133521,FLS/BCH/21/71118,11153562EGU,Precious,Jonathan,Adegoke,m,adegokeprecious30@gmail.com,+234-8068747550#,NG,2004-06-23#,school fee paid,ug_ft,BSCBCH,FLS,BCH,300,2022,0,2021,oyo,akinyele
