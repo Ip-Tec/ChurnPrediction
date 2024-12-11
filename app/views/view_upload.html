@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Document</title>
+    <link rel="stylesheet" href="../static/upload.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Uploaded Document</h1>
+        <p>File: {{ file_name }}</p>
+        <form action="/process-churn" method="POST">
+            <input type="hidden" name="file_name" value="{{ file_name }}">
+            <button type="submit" id="churn-button">Churn</button>
+        </form>
+    </div>
+    <script src="../static/scripts/upload.js"></script>
+</body>
+</html>

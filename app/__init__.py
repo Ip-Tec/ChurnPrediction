@@ -8,7 +8,7 @@ def create_app():
     # Set custom template folder
     app = Flask(__name__, template_folder="views")
 
-    app.config["UPLOAD_FOLDER"] = "path/to/upload/folder"
+    app.config["UPLOAD_FOLDER"] = "upload_folder"
 
     # Load configuration
     app.config.from_object("config.Config")

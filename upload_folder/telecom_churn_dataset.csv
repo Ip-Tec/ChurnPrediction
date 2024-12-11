@@ -1,0 +1,101 @@
+CustomerID,Gender,Age,Tenure,ContractType,MonthlyCharges,TotalCharges,PaymentMethod,InternetService,StreamingServices,TechSupport,ComplaintsLogged,ServiceIssuesReported,CustomerSupportCalls,Churn,Region,DataUsage,AddOns,DeviceProtection,OnlineBackup,OnlineSecurity,PaperlessBilling
+CUST0001,Male,42,70,Month-to-Month,147.37,4120.14,Credit Card,No Internet,Yes,Yes,0,13,11,No,North,98.26,Additional Phone Line,Yes,Yes,No,No
+CUST0002,Male,56,26,Month-to-Month,41.01,8353.88,Bank Transfer,Fiber Optic,No,No,5,8,3,Yes,South,9.35,Security Features,No,No,Yes,Yes
+CUST0003,Female,47,40,Bi-Annual,77.44,3108.36,Credit Card,DSL,Yes,No,7,14,11,Yes,East,64.97,Security Features,Yes,No,No,Yes
+CUST0004,Male,51,52,Month-to-Month,111.74,2180.81,Credit Card,No Internet,Yes,No,6,9,17,Yes,South,4.88,None,No,Yes,No,No
+CUST0005,Male,34,48,Month-to-Month,92.92,7879.01,PayPal,No Internet,Yes,Yes,6,6,20,No,South,71.05,Additional Phone Line,Yes,No,No,Yes
+CUST0006,Male,80,57,Month-to-Month,34.54,6105.95,PayPal,Fiber Optic,Yes,Yes,10,12,11,No,East,99.11,Security Features,Yes,No,No,No
+CUST0007,Male,53,67,Bi-Annual,142.86,3290.27,Credit Card,DSL,No,Yes,10,15,1,Yes,East,52.88,Additional Phone Line,No,No,Yes,Yes
+CUST0008,Male,73,58,Month-to-Month,109.83,4473.68,PayPal,Fiber Optic,No,Yes,2,3,12,No,East,61.37,Additional Phone Line,Yes,Yes,No,Yes
+CUST0009,Female,78,16,Bi-Annual,39.38,6788.71,Bank Transfer,Fiber Optic,No,No,7,7,8,No,North,37.03,Security Features,Yes,No,Yes,Yes
+CUST0010,Male,18,32,Month-to-Month,24.68,5160.62,Credit Card,DSL,Yes,Yes,0,12,6,No,North,91.88,Security Features,No,No,No,Yes
+CUST0011,Male,61,29,Annual,68.0,7957.98,Bank Transfer,Fiber Optic,Yes,Yes,2,11,3,No,West,39.35,Additional Phone Line,No,Yes,Yes,Yes
+CUST0012,Male,64,9,Month-to-Month,91.83,9602.34,PayPal,Fiber Optic,No,No,8,9,14,No,West,77.67,Security Features,Yes,Yes,No,Yes
+CUST0013,Male,25,44,Bi-Annual,75.87,7386.02,PayPal,No Internet,Yes,No,9,9,2,Yes,South,68.21,Additional Phone Line,No,Yes,Yes,No
+CUST0014,Male,61,3,Month-to-Month,25.44,6622.62,Bank Transfer,Fiber Optic,No,No,5,0,6,No,South,6.18,Security Features,No,Yes,No,No
+CUST0015,Male,74,71,Bi-Annual,67.4,2909.49,Credit Card,No Internet,Yes,Yes,1,12,20,No,West,63.46,None,Yes,No,No,No
+CUST0016,Male,52,30,Bi-Annual,141.3,6672.15,PayPal,DSL,No,No,7,8,20,No,South,34.13,Security Features,Yes,Yes,Yes,Yes
+CUST0017,Female,66,29,Month-to-Month,146.39,6230.68,PayPal,Fiber Optic,Yes,No,1,0,19,No,East,33.64,Additional Phone Line,Yes,No,Yes,No
+CUST0018,Male,35,1,Bi-Annual,25.19,1024.53,PayPal,DSL,Yes,Yes,8,1,0,No,North,56.24,Security Features,No,Yes,Yes,Yes
+CUST0019,Female,67,10,Month-to-Month,66.52,9524.8,Bank Transfer,No Internet,No,No,7,15,1,Yes,West,39.27,Additional Phone Line,Yes,No,Yes,No
+CUST0020,Female,59,8,Annual,108.67,2425.2,Bank Transfer,No Internet,Yes,No,0,9,10,No,North,25.95,Security Features,No,No,No,No
+CUST0021,Male,39,30,Bi-Annual,106.7,3173.15,PayPal,No Internet,Yes,No,2,7,7,Yes,West,85.31,Additional Phone Line,Yes,Yes,No,Yes
+CUST0022,Male,25,9,Bi-Annual,65.98,8084.97,Credit Card,Fiber Optic,No,No,6,11,4,Yes,North,96.48,Additional Phone Line,Yes,No,No,Yes
+CUST0023,Female,36,5,Bi-Annual,92.78,1558.8,Bank Transfer,No Internet,Yes,No,10,7,18,Yes,West,60.67,Security Features,Yes,No,Yes,Yes
+CUST0024,Female,45,43,Bi-Annual,133.71,557.52,Credit Card,No Internet,No,Yes,2,6,6,Yes,North,15.89,Additional Phone Line,Yes,Yes,Yes,No
+CUST0025,Female,28,10,Annual,146.6,9840.97,Bank Transfer,Fiber Optic,Yes,Yes,1,8,2,No,East,9.07,None,No,Yes,No,No
+CUST0026,Male,47,66,Annual,117.43,6151.61,Bank Transfer,Fiber Optic,Yes,No,7,4,17,Yes,West,66.7,None,No,No,No,No
+CUST0027,Male,18,31,Month-to-Month,140.35,7708.04,Credit Card,Fiber Optic,No,No,4,3,6,No,West,91.76,Security Features,No,Yes,Yes,No
+CUST0028,Female,79,36,Bi-Annual,50.78,4608.62,Credit Card,No Internet,No,No,5,1,18,Yes,West,31.71,Additional Phone Line,No,Yes,Yes,Yes
+CUST0029,Male,64,63,Bi-Annual,41.13,8872.76,Credit Card,No Internet,No,No,9,9,6,Yes,East,65.95,Additional Phone Line,No,Yes,No,No
+CUST0030,Male,74,28,Annual,123.99,5799.14,Bank Transfer,Fiber Optic,No,No,6,14,7,No,North,66.55,Additional Phone Line,Yes,Yes,No,No
+CUST0031,Female,64,70,Month-to-Month,43.02,7211.62,Credit Card,Fiber Optic,No,Yes,10,1,10,Yes,West,13.77,Security Features,Yes,Yes,No,No
+CUST0032,Male,34,17,Annual,73.6,3901.39,Credit Card,DSL,Yes,No,1,11,4,No,North,71.17,Security Features,No,No,No,No
+CUST0033,Female,80,61,Annual,43.32,4056.56,Credit Card,DSL,Yes,Yes,5,4,19,No,East,9.39,None,No,Yes,No,No
+CUST0034,Female,50,32,Month-to-Month,140.18,1560.96,Credit Card,Fiber Optic,No,No,10,2,0,No,South,56.33,Additional Phone Line,Yes,No,Yes,Yes
+CUST0035,Female,66,61,Bi-Annual,121.71,6907.46,Credit Card,Fiber Optic,No,No,8,9,8,Yes,West,64.71,None,No,No,Yes,Yes
+CUST0036,Male,29,53,Bi-Annual,73.52,8937.33,Credit Card,DSL,Yes,No,6,10,4,No,East,33.52,Security Features,No,No,No,No
+CUST0037,Female,50,25,Annual,107.09,8618.36,Credit Card,Fiber Optic,Yes,Yes,5,13,4,No,North,13.65,Security Features,Yes,Yes,No,No
+CUST0038,Male,76,13,Annual,115.56,8866.11,Bank Transfer,No Internet,No,No,10,5,17,No,West,70.58,None,No,Yes,Yes,Yes
+CUST0039,Female,24,13,Annual,52.26,7806.36,Credit Card,No Internet,No,Yes,7,6,8,Yes,North,94.76,Additional Phone Line,No,Yes,Yes,No
+CUST0040,Male,73,56,Month-to-Month,40.7,2266.53,Bank Transfer,No Internet,Yes,No,8,4,5,Yes,South,99.72,Additional Phone Line,No,No,No,No
+CUST0041,Female,58,46,Month-to-Month,111.17,8060.69,PayPal,Fiber Optic,Yes,No,0,11,3,Yes,West,91.33,Additional Phone Line,No,No,Yes,Yes
+CUST0042,Female,37,55,Annual,69.73,6989.53,PayPal,Fiber Optic,Yes,Yes,9,8,0,No,West,10.25,Security Features,No,No,Yes,No
+CUST0043,Male,71,53,Bi-Annual,25.03,4699.04,Bank Transfer,DSL,Yes,Yes,1,5,4,Yes,North,67.38,Additional Phone Line,No,No,No,No
+CUST0044,Male,58,60,Bi-Annual,81.19,5618.32,Credit Card,Fiber Optic,No,No,3,8,0,Yes,West,51.34,Additional Phone Line,Yes,No,No,No
+CUST0045,Male,50,7,Month-to-Month,45.94,9182.95,Bank Transfer,Fiber Optic,Yes,No,10,15,11,No,East,2.8,None,No,Yes,No,No
+CUST0046,Male,56,13,Month-to-Month,139.4,1301.45,PayPal,DSL,Yes,No,10,9,7,No,East,31.58,None,No,Yes,No,No
+CUST0047,Female,30,8,Bi-Annual,65.46,1420.06,Bank Transfer,Fiber Optic,Yes,Yes,4,10,18,Yes,South,95.17,None,No,No,Yes,No
+CUST0048,Male,27,52,Month-to-Month,126.67,4699.97,PayPal,DSL,No,Yes,3,3,10,No,East,34.83,None,No,Yes,Yes,Yes
+CUST0049,Male,41,44,Bi-Annual,133.27,5358.21,Bank Transfer,Fiber Optic,Yes,No,1,14,0,Yes,South,76.85,Security Features,Yes,No,No,No
+CUST0050,Male,66,14,Annual,48.98,5633.36,Bank Transfer,Fiber Optic,No,Yes,6,2,5,No,North,20.01,Additional Phone Line,No,No,Yes,No
+CUST0051,Female,28,32,Month-to-Month,105.8,3241.25,Bank Transfer,Fiber Optic,No,No,1,4,8,Yes,North,100.0,Security Features,Yes,No,No,No
+CUST0052,Female,52,25,Annual,71.8,7576.98,Bank Transfer,Fiber Optic,No,No,10,7,1,No,South,16.34,Additional Phone Line,No,Yes,No,Yes
+CUST0053,Female,79,25,Month-to-Month,56.22,4481.48,Bank Transfer,No Internet,No,No,1,12,4,Yes,East,30.28,Security Features,Yes,Yes,No,No
+CUST0054,Female,67,69,Month-to-Month,29.02,8168.56,PayPal,No Internet,No,Yes,7,11,13,Yes,East,79.02,Additional Phone Line,No,Yes,No,Yes
+CUST0055,Male,77,58,Annual,120.53,8931.0,Bank Transfer,Fiber Optic,No,Yes,2,2,16,No,South,51.26,Additional Phone Line,No,No,Yes,No
+CUST0056,Female,51,18,Annual,65.65,4324.73,Bank Transfer,No Internet,Yes,Yes,4,12,3,No,South,54.44,Additional Phone Line,Yes,Yes,No,Yes
+CUST0057,Female,76,55,Month-to-Month,86.22,9077.86,Bank Transfer,DSL,Yes,Yes,0,0,2,No,North,74.13,Security Features,Yes,Yes,Yes,No
+CUST0058,Male,18,24,Annual,108.34,4514.54,Credit Card,No Internet,Yes,No,0,8,15,No,South,53.13,None,No,Yes,Yes,No
+CUST0059,Female,56,36,Bi-Annual,129.68,1675.66,PayPal,DSL,Yes,Yes,5,3,14,Yes,East,66.53,None,No,No,No,No
+CUST0060,Male,38,60,Bi-Annual,63.05,8628.8,Bank Transfer,DSL,No,No,0,14,11,Yes,South,87.76,Security Features,No,Yes,No,No
+CUST0061,Male,49,32,Annual,23.59,4555.69,PayPal,DSL,Yes,Yes,4,11,16,Yes,South,62.19,Additional Phone Line,No,Yes,Yes,Yes
+CUST0062,Male,19,10,Bi-Annual,134.01,7542.59,Bank Transfer,No Internet,Yes,Yes,5,8,18,No,South,60.13,Additional Phone Line,No,No,No,Yes
+CUST0063,Male,25,57,Bi-Annual,53.96,8414.64,Credit Card,Fiber Optic,Yes,Yes,5,12,3,Yes,North,16.27,Security Features,Yes,Yes,No,No
+CUST0064,Female,77,71,Bi-Annual,95.48,2845.38,PayPal,Fiber Optic,Yes,No,6,11,14,Yes,South,18.9,None,No,No,No,No
+CUST0065,Female,41,13,Month-to-Month,147.86,7798.98,Credit Card,No Internet,Yes,Yes,2,3,16,Yes,West,69.59,None,No,No,Yes,Yes
+CUST0066,Female,74,7,Bi-Annual,24.97,4897.51,Credit Card,DSL,Yes,Yes,3,7,7,Yes,West,62.85,Additional Phone Line,No,Yes,Yes,Yes
+CUST0067,Male,71,70,Bi-Annual,97.55,2468.53,Bank Transfer,No Internet,Yes,No,8,15,19,Yes,West,90.36,None,Yes,No,Yes,Yes
+CUST0068,Female,69,2,Annual,64.94,4454.74,PayPal,Fiber Optic,No,No,6,0,1,No,East,72.4,None,No,Yes,No,Yes
+CUST0069,Male,37,12,Bi-Annual,122.24,7164.09,PayPal,No Internet,No,No,9,10,16,No,East,5.33,None,No,No,No,Yes
+CUST0070,Male,33,31,Month-to-Month,76.73,2421.49,PayPal,No Internet,No,No,10,7,9,No,South,37.07,Additional Phone Line,No,Yes,No,Yes
+CUST0071,Male,21,22,Month-to-Month,147.95,3424.89,PayPal,Fiber Optic,No,No,2,2,14,No,West,72.24,None,Yes,No,No,Yes
+CUST0072,Female,33,53,Annual,35.03,8940.97,Bank Transfer,Fiber Optic,Yes,No,2,14,20,Yes,North,96.99,Additional Phone Line,Yes,Yes,Yes,Yes
+CUST0073,Female,74,63,Month-to-Month,136.94,897.72,Bank Transfer,DSL,Yes,Yes,2,9,0,No,West,61.45,Security Features,No,Yes,Yes,Yes
+CUST0074,Female,54,62,Month-to-Month,44.71,1593.22,Credit Card,DSL,No,No,1,13,1,No,West,75.49,Security Features,No,Yes,No,No
+CUST0075,Male,78,28,Bi-Annual,25.77,3892.05,Bank Transfer,Fiber Optic,No,Yes,9,3,15,No,East,78.6,Additional Phone Line,Yes,Yes,Yes,No
+CUST0076,Male,23,52,Bi-Annual,76.69,1612.77,PayPal,DSL,No,No,6,4,12,Yes,East,24.17,None,Yes,No,Yes,No
+CUST0077,Female,23,8,Month-to-Month,87.59,2218.13,Bank Transfer,Fiber Optic,Yes,Yes,9,1,13,Yes,North,24.68,Security Features,Yes,Yes,Yes,Yes
+CUST0078,Male,64,22,Annual,124.85,4207.19,Credit Card,No Internet,Yes,Yes,10,1,3,Yes,East,96.59,Additional Phone Line,No,Yes,Yes,Yes
+CUST0079,Female,49,49,Annual,109.29,3375.73,PayPal,DSL,No,Yes,3,9,15,Yes,North,78.65,None,Yes,Yes,No,Yes
+CUST0080,Female,70,1,Bi-Annual,142.23,4712.65,PayPal,Fiber Optic,Yes,No,7,15,14,Yes,East,90.49,Security Features,Yes,Yes,No,Yes
+CUST0081,Female,22,50,Month-to-Month,115.81,716.43,Credit Card,No Internet,No,No,9,3,2,Yes,West,20.21,Additional Phone Line,Yes,No,No,No
+CUST0082,Male,80,34,Bi-Annual,45.61,8345.62,Credit Card,No Internet,Yes,No,2,3,2,No,West,68.15,None,Yes,Yes,Yes,No
+CUST0083,Female,66,59,Annual,76.07,3955.82,PayPal,Fiber Optic,Yes,No,3,7,10,No,North,57.47,None,No,No,Yes,No
+CUST0084,Male,52,37,Month-to-Month,143.35,7720.98,Bank Transfer,Fiber Optic,Yes,Yes,7,4,19,No,North,44.62,Additional Phone Line,No,Yes,No,Yes
+CUST0085,Male,67,55,Bi-Annual,139.7,9466.01,Bank Transfer,No Internet,No,No,10,12,4,No,East,77.17,None,No,No,No,No
+CUST0086,Female,26,72,Bi-Annual,101.01,293.37,PayPal,No Internet,Yes,No,4,14,2,No,East,78.03,Security Features,Yes,No,Yes,No
+CUST0087,Female,26,63,Annual,106.24,8818.5,PayPal,Fiber Optic,Yes,No,7,11,4,No,North,50.79,Additional Phone Line,Yes,No,No,No
+CUST0088,Female,60,20,Bi-Annual,36.2,5799.33,PayPal,Fiber Optic,Yes,Yes,4,13,8,No,North,42.45,None,No,No,No,Yes
+CUST0089,Female,48,25,Annual,137.01,4822.1,Bank Transfer,No Internet,Yes,No,10,4,19,Yes,West,17.04,None,No,Yes,No,Yes
+CUST0090,Male,78,38,Annual,85.93,9433.14,Bank Transfer,No Internet,No,No,0,13,20,Yes,West,20.77,None,No,No,No,Yes
+CUST0091,Male,53,28,Month-to-Month,106.7,3056.27,PayPal,Fiber Optic,No,No,7,3,18,No,North,60.86,None,No,No,No,Yes
+CUST0092,Female,28,8,Month-to-Month,62.4,3960.87,Credit Card,Fiber Optic,No,No,4,15,17,No,West,87.43,None,Yes,No,No,Yes
+CUST0093,Male,34,70,Bi-Annual,110.64,8927.25,PayPal,No Internet,Yes,No,10,13,10,Yes,South,6.17,Additional Phone Line,Yes,Yes,Yes,No
+CUST0094,Male,51,8,Annual,92.07,8373.71,PayPal,Fiber Optic,No,No,8,8,12,No,East,48.58,Security Features,No,Yes,No,Yes
+CUST0095,Male,73,41,Annual,44.94,5428.38,Bank Transfer,Fiber Optic,No,No,2,1,19,No,West,37.75,Security Features,No,Yes,No,Yes
+CUST0096,Male,56,8,Month-to-Month,106.44,7372.88,PayPal,Fiber Optic,No,Yes,1,11,16,No,South,93.5,Additional Phone Line,No,No,Yes,No
+CUST0097,Male,45,7,Month-to-Month,69.29,8018.69,Bank Transfer,Fiber Optic,No,Yes,7,6,9,Yes,North,71.43,None,No,No,No,No
+CUST0098,Female,79,62,Annual,117.26,8988.33,Credit Card,DSL,No,No,5,14,14,Yes,West,52.08,Security Features,Yes,No,No,Yes
+CUST0099,Male,31,65,Month-to-Month,42.62,4933.47,PayPal,DSL,No,Yes,9,14,16,No,North,13.34,Security Features,Yes,No,Yes,No
+CUST0100,Female,77,68,Bi-Annual,93.98,2802.06,Credit Card,No Internet,Yes,No,4,7,19,Yes,East,9.3,Security Features,Yes,Yes,No,Yes

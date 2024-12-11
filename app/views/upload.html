@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload</title>
+    <title>File Upload with Preview</title>
     <link rel="stylesheet" href="../static/upload.css">
 </head>
 <body>
     <div class="container">
-        <div id="drop-area" class="drag-drop">
-            <div class="upload-instructions">
-                <p>Drag and Drop file or</p>
-                <button id="browse-button">Browse</button>
+        <form id="upload-form">
+            <div id="drop-area" class="drag-drop">
+                <div class="upload-instructions">
+                    <p>Drag and Drop file here</p>
+                    <button type="button" id="browse-button">Browse</button>
+                </div>
+                <input type="file" id="file-input" name="file" hidden>
             </div>
-            <input type="file" id="file-input" multiple hidden>
-        </div>
+            <div id="preview-container" style="display: none;">
+                <h3>Data Preview</h3>
+                <table id="data-preview">
+                    <!-- Preview table will be dynamically filled -->
+                </table>
+                <label for="target-column">Select Target Column:</label>
+                <select id="target-column" name="target_column" required>
+                    <!-- Columns will be dynamically populated -->
+                </select>
+            </div>
+            <button type="submit" disabled id="process-button">Process</button>
+        </form>
         <ul id="file-list" class="file-list"></ul>
     </div>
     <script src="../static/scripts/upload.js"></script>

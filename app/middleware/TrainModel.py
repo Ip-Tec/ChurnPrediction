@@ -1,9 +1,14 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score
 import joblib
+import pandas as pd
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+# Define a Blueprint for modular application structure and routing
+from flask import Blueprint
+
+main = Blueprint("main", __name__)
 
 
 class ChurnModel:

@@ -40,7 +40,8 @@ def login():
         # Validate credentials (in this case, hardcoded check)
         if email == "admin" and password == "admin":
             session["logged_in"] = True  # Mark the user as logged in
-            return render_template("dashboard.html")  # Redirect to the dashboard
+            # Redirect to the dashboard
+            return render_template("dashboard.html")
         else:
             return "Login failed"  # Handle invalid credentials
     # Render the login page if it's a GET request
@@ -57,7 +58,8 @@ def register():
         # Validate credentials (same hardcoded check as login)
         if email == "admin" and password == "admin":
             session["logged_in"] = True  # Mark the user as logged in
-            return render_template("dashboard.html")  # Redirect to the dashboard
+            # Redirect to the dashboard
+            return render_template("dashboard.html")
         else:
             return "Login failed"  # Handle invalid credentials
     # Render the registration page if it's a GET request
@@ -82,35 +84,78 @@ def dashboard():
 
 # File upload route: Handles file uploads via GET and POST
 @main.route("/upload", methods=["GET", "POST"])
-def Upload():
-    if request.method == "POST":  # If a file upload form is submitted
+def upload():
+    if request.method == "POST":  # Handle file uploads
         if "file" not in request.files:
-            return jsonify({"error": "No file part"}), 400  # Return an error response
-        file = request.files["file"]  # Extract the file from the request
+            # Return error response if no file part
+            return jsonify({"error": "No file part"}), 400
+
+        file = request.files["file"]  # Get the uploaded file
         if file.filename == "":
-            return (
-                jsonify({"error": "No selected file"}),
-                400,
-            )  # Return an error response
+            # Return error response if no file selected
+            return jsonify({"error": "No selected file"}), 400
+
         if file:
             filename = secure_filename(file.filename)  # Secure the filename
             upload_folder = current_app.config["UPLOAD_FOLDER"]
+
+            # Create upload folder if it doesn't exist
             if not os.path.exists(upload_folder):
                 os.makedirs(upload_folder)
+
             file_path = os.path.join(upload_folder, filename)
-            file.save(file_path)  # Save the file
+            file.save(file_path)  # Save the file to the server
 
-            # Pass the file path to FileProcessor
-            processing_result = FileProcessor.UploadFile(file_path)
+            # Return JSON response with file name
+            return jsonify({"message": "File uploaded successfully!", "fileName": filename}), 200
 
-            return (
-                jsonify(
-                    {
-                        "message": "File uploaded successfully!",
-                        "result": processing_result,
-                    }
-                ),
-                200,
-            )
-    elif request.method == "GET":
+    elif request.method == "GET":  # Render the upload page
         return render_template("upload.html")
+
+
+@main.route("/process-churn", methods=["POST"])
+def process_churn():
+    file = request.files.get("file")
+    target_column = request.form.get("target_column")
+
+    if not file or not target_column:
+        return jsonify({"error": "File and target column are required"}), 400
+
+    filename = secure_filename(file.filename)
+    upload_folder = current_app.config["UPLOAD_FOLDER"]
+    file_path = os.path.join(upload_folder, filename)
+
+    if not os.path.exists(upload_folder):
+        os.makedirs(upload_folder)
+
+    file.save(file_path)
+
+    try:
+        churn_result = FileProcessor.UploadFile(file_path, target_column)
+        return jsonify({"message": "Churn processed successfully", "result": churn_result}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@main.route("/preview-data", methods=["POST"])
+def preview_data():
+    file = request.files.get("file")
+    if not file:
+        return jsonify({"error": "No file uploaded"}), 400
+
+    try:
+        # Read file into a pandas DataFrame
+        if file.filename.endswith(".csv"):
+            data = pd.read_csv(file)
+        elif file.filename.endswith(".xlsx"):
+            data = pd.read_excel(file)
+        else:
+            return jsonify({"error": "Unsupported file type"}), 400
+
+        # Get headers and first few rows
+        headers = list(data.columns)
+        rows = data.head(10).to_dict(orient="records")
+
+        return jsonify({"headers": headers, "rows": rows}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
