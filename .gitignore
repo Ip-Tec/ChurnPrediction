@@ -1,4 +1,7 @@
+*.pyc
+
 venv/
 .vscode/
+instance/
 __pycache__/
-*.pyc
+upload_folder/

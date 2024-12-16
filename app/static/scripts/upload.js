@@ -158,3 +158,42 @@ document.getElementById("file-input").addEventListener("change", async () => {
   }
 });
 
+// Get elements
+const dataItems = document.querySelectorAll('.data-item');
+const contentArea = document.getElementById('data-content');
+const placeholder = document.querySelector('.placeholder');
+
+// Data content for demonstration
+const dataContent = {
+    1: "This is the content of Data File 1. It contains detailed insights and analysis.",
+    2: "This is the content of Data File 2. It includes user-uploaded data and metrics.",
+    3: "This is the content of Data File 3. It summarizes key performance indicators."
+};
+
+// Add click event to each data item
+dataItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const dataId = item.getAttribute('data-id');
+        displayContent(dataId);
+    });
+});
+
+// Function to display content
+function displayContent(dataId) {
+    // Remove placeholder
+    placeholder.style.display = "none";
+
+    // Insert content
+    contentArea.innerHTML = `
+        <div class="content active">
+            <h2>Data Content</h2>
+            <p>${dataContent[dataId]}</p>
+        </div>
+    `;
+
+    // Mobile-specific behavior
+    if (window.innerWidth <= 768) {
+        contentArea.classList.add('active');
+        document.querySelector('.data-list').style.display = "none";
+    }
+}

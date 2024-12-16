@@ -3,55 +3,269 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Churn Prediction Dashboard</title>
-    <link rel="stylesheet" href="../static/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard with Data</title>
   </head>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9fafb;
+      color: #333;
+    }
+
+    /* Container */
+    .container {
+      max-width: auto;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 2px solid #00a7e1;
+    }
+
+    .header .logo {
+      font-size: 24px;
+      color: #00a7e1;
+    }
+
+    .header nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .header nav ul li {
+      margin-left: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Dashboard */
+    .dashboard {
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 60px);
+    }
+
+    /* Sidebar */
+    .data-list {
+      width: 30%;
+      background-color: #eef9ff;
+      border-right: 2px solid #ddd;
+      padding: 20px;
+      display: block;
+    }
+
+    .data-list h2 {
+      margin-bottom: 20px;
+      color: #00a7e1;
+    }
+
+    .data-list ul {
+      list-style: none;
+    }
+
+    .data-list li {
+      background: #fff;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .data-list li:hover {
+      background: #cceeff;
+    }
+
+    /* Content Area */
+    .data-content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .placeholder {
+      color: #888;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    /* Content Display */
+    .content {
+      display: none;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    /* Mobile View */
+    @media screen and (max-width: 768px) {
+      .dashboard {
+        flex-direction: column;
+      }
+
+      .data-list {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+      }
+
+      .data-content {
+        display: none; /* Hidden by default until an item is clicked */
+      }
+
+      .data-content.active {
+        display: block;
+      }
+
+      .data-list {
+        display: none; /* Hide list when showing content on mobile */
+      }
+    }
+  </style>
   <body>
     <div class="container">
-      <aside class="sidebar">
-        <div class="profile">
-          <div class="avatar">JD</div>
-          <h3>John Don</h3>
-          <p>johndon@company.com</p>
-        </div>
-        <nav class="menu">
-          <a href="#">Home</a>
-          <a href="#">File</a>
-          <a href="#">Messages</a>
-          <a href="#">Notifications</a>
-          <a href="#">Location</a>
-          <a href="#">Graphs</a>
+      <!-- Header -->
+      <header class="header">
+        <h1 class="logo">Dashboard</h1>
+        <nav>
+          <ul>
+            <li>Data</li>
+            <li>Profile</li>
+            <li>Setting</li>
+          </ul>
         </nav>
-      </aside>
+      </header>
 
-      <main class="dashboard">
-        <header class="dashboard-header">
-          <div class="info-box">
-            <h4>Earnings</h4>
-            <p>$628</p>
-          </div>
-          <div class="info-box">
-            <h4>Share</h4>
-            <p>2434</p>
-          </div>
-          <div class="info-box">
-            <h4>Likes</h4>
-            <p>1259</p>
-          </div>
-          <div class="info-box">
-            <h4>Rating</h4>
-            <p>8.5</p>
-          </div>
-        </header>
+      <!-- Main Content -->
+      <div class="dashboard">
+        <!-- Sidebar for Data List -->
+        <aside class="data-list" id="data-list">
+          <h2>Your Data</h2>
+          <ul id="data-list-ul">
+            <!-- Data list will be populated here -->
+          </ul>
+        </aside>
 
-        <section class="charts">
-          <canvas id="barChart"></canvas>
-          <canvas id="lineChart"></canvas>
+        <!-- Data Content Area -->
+        <section class="data-content" id="data-content">
+          <div class="placeholder">
+            <p>Select a data file to view its content.</p>
+          </div>
         </section>
-      </main>
+      </div>
     </div>
 
-    <script src="../static/scripts/chart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get elements
+        const dataList = document.getElementById("data-list-ul");
+        const contentArea = document.getElementById("data-content");
+        const placeholder = document.querySelector(".placeholder");
+
+        // Fetch user data from Flask API
+        fetch("/api/data")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Failed to fetch data from the server.");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            if (data.message === "No data found. Please upload a file.") {
+              // Redirect to /upload if no data exists
+              window.location.href = "/upload";
+            } else {
+              renderDataList(data);
+            }
+
+            if (data.length === 0) {
+              // Redirect to /upload if no data exists
+              window.location.href = "/upload";
+            } else {
+              renderDataList(data);
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            contentArea.innerHTML =
+              "<p>Error fetching data. Please try again later.</p>";
+          });
+
+        // Function to render the list of data files
+        function renderDataList(data) {
+          dataList.innerHTML = ""; // Clear the placeholder list
+
+          data.forEach((item) => {
+            const listItem = document.createElement("li");
+            listItem.className = "data-item";
+            listItem.setAttribute("data-id", item.id);
+            listItem.textContent = item.fileName || `Data File ${item.id}`;
+
+            // Add click event to display content
+            listItem.addEventListener("click", () => displayContent(item));
+            dataList.appendChild(listItem);
+
+            console.log({ item });
+          });
+        }
+
+        // Function to display content of the selected data
+        function displayContent(item) {
+          const fileId = item.id;
+          const userId = item.user;
+
+          // Create a new FormData object to send the data
+          const formData = new FormData();
+          formData.append("file_id", fileId);
+          formData.append("user_id", userId); // Include user ID for ownership verification
+
+          // Send a POST request with the FormData
+          fetch("/api/read-file", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.error) {
+                alert(data.error); // Show error message from the server
+                return;
+              }
+              console.log({ data });
+              // Handle successful response (data should be an array)
+              const fileData = data
+                .map((row) => Object.values(row).join(", "))
+                .join("\n");
+              contentArea.innerHTML = `
+                    <div class="content active">
+                        <h2>File Content</h2>
+                        <pre>${fileData}</pre>
+                    </div>
+                `;
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              contentArea.innerHTML =
+                "<p>Error fetching data. Please try again later.</p>";
+            });
+        }
+      });
+    </script>
   </body>
 </html>

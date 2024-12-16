@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Page</title>
-    <link rel="stylesheet" href="../static/login-style.css">
-</head>
-<body>
-    <div class="login-container">
-        <form id="registerForm" class="login-form">
-            <h2>Register</h2>
-            <div id="errorMessage" class="error-message"></div>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
-            </div>
-            <div class="form-buttons">
-                <button type="submit" class="btn">Register</button>
-                <button type="button" class="btn register-btn" onclick="goToLogin()">Back to Login</button>
-            </div>
+    <link rel="stylesheet" href="../static/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Section (Desktop View) -->
+      <div class="left-section">
+        <h1>
+          Let Churn, <br />
+          please enter your details
+        </h1>
+        <form method="POST" action="/register">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="********" />
+
+          <button type="submit" class="login-btn">Register</button>
+          <p>I have an account? <a href="/login">Login</a></p>
         </form>
+      </div>
+
+      <!-- Right Section -->
+      <div class="register-right-section">
+        <div class="overlay">
+          <h1>Let Churn</h1>
+        </div>
+      </div>
     </div>
-    <script src="../static/scripts/register.js"></script>
-</body>
+
+    <!-- Mobile Section -->
+    <div class="mobile-section">
+      <div class="overlay">
+        <h1>
+          Let Churn, <br />
+          please enter your details
+        </h1>
+        <form method="POST" action="/register">
+          <label for="mobile-email">Email</label>
+          <input
+            type="email"
+            id="mobile-email" name="email"
+            placeholder="Enter your email"
+          />
+
+          <label for="mobile-password">Password</label>
+          <input type="password" id="mobile-password" name="password" placeholder="********" />
+
+          <button type="submit" class="login-btn">Register</button>
+          <p>I have an account? <a href="login">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

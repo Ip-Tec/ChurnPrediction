@@ -1,6 +1,6 @@
 # This file allows the directory to be treated as a Python package.
 
-from .routes import main
+from app.routes import main
 
 # Function to register controllers
 

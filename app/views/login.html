@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="../static/login-style.css">
-</head>
-<body>
-    <div class="login-container">
-        <form id="loginForm" class="login-form">
-            <h2>Login</h2>
-            <div id="errorMessage" class="error-message"></div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-            <div class="form-group remember-me">
-                <input type="checkbox" id="rememberMe" name="rememberMe">
-                <label for="rememberMe">Remember Me</label>
-            </div>
-            <div class="form-buttons">
-                <button type="submit" class="btn">Login</button>
-                <button type="button" class="btn register-btn" onclick="register()">Register</button>
-            </div>
+    <link rel="stylesheet" href="../static/login.css" />
+  </head>
+  <body class="login">
+    <div class="container">
+      <!-- Left Section (Desktop View) -->
+      <div class="left-section">
+        <h2 style="text-align: center;">
+          Welcome back, <br />
+          please enter your details
+        </h2>
+        <form method="POST" action="/login">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="********"
+          />
+          <!-- Display the CAPTCHA image -->
+          <img src="{{ url_for('main.serve_captcha_image') }}" style="width: auto; height: 2rem" alt="CAPTCHA" />
+
+          <label for="captcha">Enter the text from the image</label>
+          <input
+            type="text"
+            id="captcha"
+            name="captcha"
+            placeholder="Enter CAPTCHA"
+          />
+
+          <button type="submit" class="login-btn">Login</button>
+          {% if error %}
+          <p style="color: red">{{ error }}</p>
+          {% endif %}
+          <p>Don't have an account? <a href="/register">Register</a></p>
         </form>
+      </div>
+
+      <!-- Right Section -->
+      <div class="login-right-section">
+        <div class="overlay">
+          <h1>Welcome Back</h1>
+        </div>
+      </div>
     </div>
-    <script src="../static/scripts/login.js"></script>
-</body>
+
+    <!-- Mobile Section -->
+    <div class="mobile-section">
+      <div class="overlay">
+        <h1>
+          Welcome back, <br />
+          please enter your details
+        </h1>
+        <form method="POST" action="/login">
+          <label for="mobile-email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="mobile-email"
+            placeholder="Enter your email"
+          />
+
+          <label for="mobile-password">Password</label>
+          <input
+            type="password"
+            id="mobile-password"
+            name="password"
+            placeholder="********"
+          />
+
+          <button type="submit" class="login-btn">Login</button>
+
+          {% if error %}
+          <p style="color: red">{{ error }}</p>
+          {% endif %}
+
+          <p>Don't have an account? <a href="/register">Register</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

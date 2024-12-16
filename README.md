@@ -7,9 +7,10 @@ Create a folder structure similar to Laravel's MVC pattern:
     ChurnPrediction/
     │
     ├── app/
-    │   ├── controllers/         # Handles logic (Controller)
+    │   ├── controllers/               # Handles logic (Controller)
     │   │   ├── __init__.py
-    │   │   └── routes.py        # Route definitions
+    │   │   └── UploadController.py    # Route definitions
+    |   |
     │   │
     │   ├── models/              # Database models (Model)
     │   │   ├── __init__.py
@@ -20,11 +21,13 @@ Create a folder structure similar to Laravel's MVC pattern:
     │   │   └── home.html        # Example template
     │   │
     │   ├── __init__.py          # Initializes the app
-    │
-    ├── static/                  # CSS, JS, images
-    ├── templates/               # Linked to app/views for HTML
+    │   ├── routes.py            # General routing file (optional)
+    |   |
+    |   ├── static/                  # CSS, JS, images
+    |   |    ├──images/
+    |   |    ├── css/
+    |
     ├── config.py                # Application configuration
-    ├── routes.py                # General routing file (optional)
     ├── run.py                   # Application entry point
     └── requirements.txt         # Dependencies
 
