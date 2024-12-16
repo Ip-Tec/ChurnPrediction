@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churn Prediction Results</title>
+  </head>
+  <body>
+    <h1>Churn Prediction Results</h1>
+    <p>Model Accuracy: {{ accuracy }}%</p>
+
+    <!-- Display Pie Chart -->
+    <h2>Churn Distribution</h2>
+    <img
+      src="data:image/png;base64,{{ pie_chart }}"
+      alt="Churn Distribution Pie Chart"
+    />
+
+    <!-- Display Feature Importance Chart -->
+    <h2>Feature Importance</h2>
+    <img
+      src="data:image/png;base64,{{ feature_importance }}"
+      alt="Feature Importance Chart"
+    />
+
+    <!-- Additional results or information can go here -->
+  </body>
+</html>
