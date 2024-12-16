@@ -247,11 +247,11 @@ def upload():
         return render_template("upload.html")
 
 # Read file route: Handles file reading
-@main.route("/api/read-file", methods=["POST"])
-def read_file():
+@main.route("/api/read-file/<int:num>", methods=["POST"])
+def read_file(num=10):
     # Get file_id and user_id from the form or request
     file_id = request.form.get('file_id')
-    user_id = request.form.get('user_id')  # Assuming user_id is passed in the request (e.g., from session or token)
+    user_id = request.form.get('user_id') 
     
     if not file_id or not user_id:
         return jsonify({"error": "File ID and user ID are required."}), 400
@@ -271,38 +271,64 @@ def read_file():
     file_path = file.file_path  # Assuming the file path is stored in the file model
     
     try:
-        # Read the file using pandas
-        df = pd.read_csv(file_path)
-        print(df.head(10))
+        # Determine the file extension
+        _, file_extension = os.path.splitext(file_path)
+        
+        # Read the file using pandas based on its extension
+        if file_extension.lower() == '.csv':
+            df = pd.read_csv(file_path)
+        elif file_extension.lower() in ['.xls', '.xlsx']:
+            df = pd.read_excel(file_path)
+        else:
+            return jsonify({"error": "Unsupported file format. Please upload a CSV or Excel file."}), 400
+        
         # Convert the dataframe to a dictionary format for easy display in the frontend
-        data = jsonify(df.to_dict(orient='records'))
-        # print(data)
-        return data
+        df_count = df.head(num * 2)  # Fetch twice the number of rows as specified
+        html_table = df_count.to_html(index=False)  # Convert to HTML table
+
+        return html_table
+        
     except Exception as e:
         return jsonify({"error": f"Error reading file: {str(e)}"}), 500
 
 # Process churn route: Handles churn processing
-@main.route("/process-churn", methods=["POST"])
+@main.route("/churn", methods=["POST"])
 def process_churn():
-    file = request.files.get("file")
-    target_column = request.form.get("target_column")
-
-    if not file or not target_column:
-        return jsonify({"error": "File and target column are required"}), 400
-
-    filename = secure_filename(file.filename)
-    upload_folder = current_app.config["UPLOAD_FOLDER"]
-    file_path = os.path.join(upload_folder, filename)
-
-    if not os.path.exists(upload_folder):
-        os.makedirs(upload_folder)
-
-    file.save(file_path)
-
     try:
-        churn_result = FileProcessor.UploadFile(file_path, target_column)
+        file_id = request.json.get("file_id")
+        target_column = request.json.get("target_column")
+        print(f"Received file_id: {file_id}, target_column: {target_column}")
+
+        if not file_id or not target_column:
+            return jsonify({"error": "File ID and target column are required"}), 400
+
+        # Fetch file details from the database
+        file_record = DataModel.query.filter_by(id=file_id).first()
+        print(f"file_record: {file_record}")
+
+        if not file_record:
+            return jsonify({"error": "File not found"}), 404
+
+        file_path = file_record.file_path  # Assuming the file path is stored in the database
+        print(f"file_path: {file_path}")
+
+        if not os.path.exists(file_path):
+            print(f"File does not exist: {file_path}")
+            return jsonify({"error": "File path does not exist on the server"}), 404
+
+        # Process the file
+        try:
+            churn_result = FileProcessor.UploadFile(file_path, target_column)
+            print(f"Churn result: {churn_result}")
+        except Exception as e:
+            print(f"Error in FileProcessor.UploadFile: {e}")
+            return jsonify({"error": "Failed to process file"}), 500
+
         return jsonify({"message": "Churn processed successfully", "result": churn_result}), 200
+
     except Exception as e:
+        print(f"Unhandled Exception: {e}")
+        print(traceback.format_exc())
         return jsonify({"error": str(e)}), 500
 
 
@@ -328,3 +354,15 @@ def preview_data():
         return jsonify({"headers": headers, "rows": rows}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+# Delete file route: Handles file deletion
+@main.route("/delete-file/", methods=["DELETE"])
+def delete_file(file_id):
+    try:
+        # Delete logic (e.g., find the file by ID and remove it)
+        file_id = request.args.get("file_id")  # or extract from the body if necessary
+        # Assuming you have a function to delete the file from DB and filesystem
+        DataModel.delete_by_id(file_id)
+        return jsonify({"status": "success", "message": "File deleted successfully!"})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500

@@ -1,0 +1,222 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #00a7e1;
+}
+
+.header .logo {
+  font-size: 24px;
+  color: #00a7e1;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  height: calc(
+    100vh - 60px
+  ); /* Adjust height dynamically based on header size */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Sidebar */
+.data-list {
+  width: 30%;
+  background-color: #eef9ff;
+  border-right: 2px solid #ddd;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100%; /* Ensure it occupies the full height of the container */
+}
+
+.data-list h2 {
+  margin-bottom: 20px;
+  color: #00a7e1;
+}
+
+.data-list ul {
+  list-style: none;
+}
+
+.data-list li {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.data-list li:hover {
+  background: #cceeff;
+}
+
+/* Content Area */
+.data-content {
+  flex: 1;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+/* Scrollable Table Container */
+.scrollable-table {
+  max-height: 500px; /* Adjust the height as needed */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+}
+
+.placeholder {
+  color: #888;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+/* Content Display */
+.content {
+  display: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.content.active {
+  display: block;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .data-list {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .data-content {
+    display: none; /* Hidden by default until an item is clicked */
+  }
+
+  .data-content.active {
+    display: block;
+  }
+
+  .data-list {
+    display: none; /* Hide list when showing content on mobile */
+  }
+
+  .data-content {
+    display: block;
+    flex: 1;
+    text-align: center;
+  }
+  .data-list {
+    display: block; /* Always visible in a toggle format */
+  }
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 85%;
+  }
+}
+
+/* Fixed Navigation Bar */
+
+.fixed-footer-p {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.fixed-footer {
+  left: 0;
+  width: 70%;
+  background-color: #eef9ff;
+  border-top: 2px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  padding: 10px 0;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.fixed-footer button {
+  padding: 10px 20px;
+  background-color: #00a7e1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fixed-footer button:hover {
+  background-color: #007bb5;
+}
+
+.fixed-footer button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+#delete-btn {
+  background-color: red;
+}
+#delete-btn:hover {
+  background-color: rgb(197, 1, 1);
+}
+
+th {
+  padding: 10px;
+}
+
+.selected {
+  background-color: #7abee0;
+}
