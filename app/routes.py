@@ -16,13 +16,13 @@ from flask import (
 import pandas as pd
 from .controllers.UploadController import (
     FileProcessor,
-) 
+)
 from werkzeug.utils import (
     secure_filename,
-) 
-from .controllers.user_controller import (
+)
+from .controllers.UserController import (
     UserController,
-) 
+)
 
 from app.models.UserModel import UserModel
 from app.models.DataModel import DataModel
@@ -36,23 +36,24 @@ main = Blueprint("main", __name__)
 # Initialize CaptchaMiddleware
 captcha_middleware = CaptchaMiddleware(main)
 
+
 # Route to serve CAPTCHA image
-@main.route('/captcha')
+@main.route("/captcha")
 def serve_captcha_image():
     try:
         BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-        UPLOAD_FOLDER = os.path.join(BASE_DIR, 'upload_folder')  # Absolute path
-        current_app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+        UPLOAD_FOLDER = os.path.join(BASE_DIR, "upload_folder")  # Absolute path
+        current_app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
         captcha_id = str(uuid.uuid4())  # Generate a unique ID for CAPTCHA
-        session['captcha_id'] = captcha_id  # Store the ID for validation
+        session["captcha_id"] = captcha_id  # Store the ID for validation
 
         # Create CAPTCHA folder inside UPLOAD_FOLDER
         captcha_folder = os.path.join(current_app.config["UPLOAD_FOLDER"], "captcha")
         os.makedirs(captcha_folder, exist_ok=True)
 
         # Generate CAPTCHA image using middleware
-        captcha_text = session.get('captcha')
+        captcha_text = session.get("captcha")
         captcha_base64 = captcha_middleware.generate_captcha_image(captcha_text)
         if not captcha_base64:
             raise ValueError("CAPTCHA generation failed: No data returned")
@@ -69,14 +70,15 @@ def serve_captcha_image():
 
     except Exception as e:
         current_app.logger.error(f"Error serving CAPTCHA image: {e}")
-        return 'Error generating CAPTCHA image', 500
+        return "Error generating CAPTCHA image", 500
+
 
 # Delete CAPTCHA image after use
 def delete_captcha_image(captcha_id):
     try:
         captcha_folder = os.path.join(current_app.config["UPLOAD_FOLDER"], "captcha")
         captcha_image_path = os.path.join(captcha_folder, f"{captcha_id}.png")
-        
+
         if os.path.exists(captcha_image_path):
             os.remove(captcha_image_path)
     except Exception as e:
@@ -94,9 +96,11 @@ def login():
 
         # Validate CAPTCHA
         stored_captcha_id = session.get("captcha")
-        
+
         if not stored_captcha_id:
-            return render_template("login.html", error="CAPTCHA expired. Please refresh.")
+            return render_template(
+                "login.html", error="CAPTCHA expired. Please refresh."
+            )
 
         # Compare user input with stored CAPTCHA
         if user_captcha != stored_captcha_id:
@@ -111,17 +115,17 @@ def login():
             session["logged_in"] = True
             session["user"] = user.email
             session["user_id"] = user.id
-            
-            
+
             # Delete CAPTCHA image after successful login
             delete_captcha_image(stored_captcha_id)
-            
+
             return redirect(url_for("main.dashboard"))
         else:
             return render_template("login.html", error="Invalid email or password")
 
     # Render the login page for GET request
     return render_template("login.html")
+
 
 # Register route: Handles both GET and POST requests for user registration
 # Register route with CAPTCHA validation
@@ -137,12 +141,16 @@ def register():
         if not stored_captcha_id:
             # Delete CAPTCHA image and generate a new one
             delete_captcha_image(stored_captcha_id)
-            return render_template("register.html", error="CAPTCHA expired. Please refresh.")
+            return render_template(
+                "register.html", error="CAPTCHA expired. Please refresh."
+            )
 
         if user_captcha != stored_captcha_id:
             # Delete CAPTCHA image and generate a new one
             delete_captcha_image(stored_captcha_id)
-            return render_template("register.html", error="Incorrect CAPTCHA. Try again.")
+            return render_template(
+                "register.html", error="Incorrect CAPTCHA. Try again."
+            )
 
         # Check if user already exists
         if UserModel.find_by_email(email):
@@ -161,6 +169,7 @@ def register():
 
     return render_template("register.html")
 
+
 # Logout route: Handles POST requests to log the user out
 @main.route("/logout", methods=["POST"])
 def logout():
@@ -169,6 +178,7 @@ def logout():
     # Redirect the user to the homepage
     return render_template("main.login")
 
+
 # Dashboard route: Renders the user dashboard
 @main.route("/dashboard")
 def dashboard():
@@ -176,29 +186,37 @@ def dashboard():
         return redirect(url_for("main.login"))
     return render_template("dashboard.html", user=session.get("user"))
 
+
 # Get data user has uploaded
 @main.route("/api/data", methods=["GET"])
 def get_data():
     # Retrieve the user's info from the session
-    user_id = session.get("user_id")  # Make sure the session key matches the one used during login
-    
+    user_id = session.get(
+        "user_id"
+    )  # Make sure the session key matches the one used during login
+
     if not user_id:
         # Redirect to login if the user session is not available
         return redirect(url_for("main.login"))
 
     # Query the database for data associated with the user
     data = DataModel.query.filter_by(user_id=user_id).all()
-    
+
     # If no data is found, inform the user
     if not data:
         return jsonify({"message": "No data found. Please upload a file."}), 200
-    
-    
+
     # Convert the data to a JSON-friendly format
     data_list = [
-        {"id": d.id, "fileName": d.file_name, "filePath": d.file_path, "user": d.user_id} for d in data
+        {
+            "id": d.id,
+            "fileName": d.file_name,
+            "filePath": d.file_path,
+            "user": d.user_id,
+        }
+        for d in data
     ]
-    
+
     # Return the data as JSON
     return jsonify(data_list)
 
@@ -226,10 +244,10 @@ def upload():
 
             file_path = os.path.join(upload_folder, filename)
             file.save(file_path)  # Save the file to the server
-            
+
             # Retrieve the user ID from the session
             user_id = session.get("user_id")  # Ensure that the session key is 'user_id'
-            
+
             if not user_id:
                 # User should be logged in
                 return jsonify({"error": "User not logged in"}), 401
@@ -241,55 +259,69 @@ def upload():
             data.save()
 
             # Return JSON response with file name and message
-            return jsonify({"message": "File uploaded successfully!", "fileName": filename}), 200
+            return (
+                jsonify(
+                    {"message": "File uploaded successfully!", "fileName": filename}
+                ),
+                200,
+            )
 
     elif request.method == "GET":
         return render_template("upload.html")
+
 
 # Read file route: Handles file reading
 @main.route("/api/read-file/<int:num>", methods=["POST"])
 def read_file(num=10):
     # Get file_id and user_id from the form or request
-    file_id = request.form.get('file_id')
-    user_id = request.form.get('user_id') 
-    
+    file_id = request.form.get("file_id")
+    user_id = request.form.get("user_id")
+
     if not file_id or not user_id:
         return jsonify({"error": "File ID and user ID are required."}), 400
-    
+
     # Query the file from the database
     file = DataModel.query.filter_by(id=file_id).first()
 
     # Check if the file exists
     if not file:
         return jsonify({"error": "File not found."}), 404
-    
+
     # Check if the logged-in user is the owner of the file
     if file.user_id != int(user_id):  # Assuming file.user_id links to the User model
         return jsonify({"error": "You are not the owner of this file."}), 403
-    
+
     # File exists and belongs to the user, so proceed to read the file
     file_path = file.file_path  # Assuming the file path is stored in the file model
-    
+
     try:
         # Determine the file extension
         _, file_extension = os.path.splitext(file_path)
-        
+
         # Read the file using pandas based on its extension
-        if file_extension.lower() == '.csv':
+        if file_extension.lower() == ".csv":
             df = pd.read_csv(file_path)
-        elif file_extension.lower() in ['.xls', '.xlsx']:
+        elif file_extension.lower() in [".xls", ".xlsx"]:
             df = pd.read_excel(file_path)
         else:
-            return jsonify({"error": "Unsupported file format. Please upload a CSV or Excel file."}), 400
-        
+            return (
+                jsonify(
+                    {
+                        "error": "Unsupported file format. Please upload a CSV or Excel file."
+                    }
+                ),
+                400,
+            )
+
         # Convert the dataframe to a dictionary format for easy display in the frontend
         df_count = df.head(num * 2)  # Fetch twice the number of rows as specified
         html_table = df_count.to_html(index=False)  # Convert to HTML table
 
         return html_table
-        
+
     except Exception as e:
         return jsonify({"error": f"Error reading file: {str(e)}"}), 500
+
 
 # Process churn route: Handles churn processing
 @main.route("/churn", methods=["POST"])
@@ -304,12 +336,14 @@ def process_churn():
 
         # Fetch file details from the database
         file_record = DataModel.query.filter_by(id=file_id).first()
-        print(f"file_record: {file_record}")
+        # print(f"file_record: {file_record}")
 
         if not file_record:
             return jsonify({"error": "File not found"}), 404
 
-        file_path = file_record.file_path  # Assuming the file path is stored in the database
+        file_path = (
+            file_record.file_path
+        )  # Assuming the file path is stored in the database
         print(f"file_path: {file_path}")
 
         if not os.path.exists(file_path):
@@ -319,17 +353,41 @@ def process_churn():
         # Process the file
         try:
             churn_result = FileProcessor.UploadFile(file_path, target_column)
-            print(f"Churn result: {churn_result}")
+            print(f"Churn result: {churn_result["accuracy"]}")
+
+            # Store churn_result temporarily in the session
+            # session["churn_result"] = churn_result
+
         except Exception as e:
             print(f"Error in FileProcessor.UploadFile: {e}")
             return jsonify({"error": "Failed to process file"}), 500
 
-        return jsonify({"message": "Churn processed successfully", "result": churn_result}), 200
+        # Redirect to the chart page with the file_id
+        return redirect(url_for("main.chart", file_id=file_id))
 
     except Exception as e:
         print(f"Unhandled Exception: {e}")
-        print(traceback.format_exc())
+        print(traceback.format_exc())  # type: ignore
         return jsonify({"error": str(e)}), 500
+
+
+# Chart route: Handles chart rendering
+@main.route("/chart/<int:file_id>", methods=["GET"])
+def chart(file_id):
+    # Retrieve churn_result from the session
+    churn_result = session.get("churn_result")
+
+    if not churn_result:
+        return jsonify({"error": "Churn result not found in session"}), 404
+
+    # Fetch file details from the database
+    file_record = DataModel.query.filter_by(id=file_id).first()
+
+    if not file_record:
+        return jsonify({"error": "File not found"}), 404
+
+    # Render the chart page with the file_id and churn_result
+    return render_template("chart.html", file_id=file_id, churn_result=churn_result)
 
 
 @main.route("/preview-data", methods=["POST"])
@@ -354,6 +412,7 @@ def preview_data():
         return jsonify({"headers": headers, "rows": rows}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 # Delete file route: Handles file deletion
 @main.route("/delete-file/", methods=["DELETE"])

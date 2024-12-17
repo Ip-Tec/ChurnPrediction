@@ -44,10 +44,11 @@ class FileProcessor:
             histogram = churn_model.generate_histogram()
             # Return both the result and charts
             return {
+                "result": result.to_dict(),
                 "accuracy": accuracy,
-                "pie_chart": pie_chart,
-                "histogram": histogram,
-                "feature_importance": feature_importance,
+                # "pie_chart": pie_chart,
+                # "histogram": histogram,
+                # "feature_importance": feature_importance,
             }
         except Exception as e:
             return f"Error in churn prediction: {str(e)}"
