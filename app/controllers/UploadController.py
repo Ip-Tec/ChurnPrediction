@@ -1,8 +1,14 @@
+import io
+import base64
+from flask import jsonify
 import pandas as pd  # To get the data
 from app.middleware import TrainModel
 
 
 class FileProcessor:
+    def __init__(self, file_path: str, target_column: str):
+        self.UploadFile(file_path, target_column)
+
     @staticmethod
     def UploadFile(file_path, target_column):
         """
@@ -15,10 +21,6 @@ class FileProcessor:
 
     @staticmethod
     def Churn(file_path, target_column):
-        """
-        Processes churn prediction for CSV or Excel files.
-        Load the dataset from the file path.
-        """
         try:
             data = (
                 pd.read_csv(file_path)
@@ -29,26 +31,39 @@ class FileProcessor:
             return f"Error loading file: {str(e)}"
 
         try:
-            # Train the model and make predictions
             churn_model = TrainModel.ChurnModel(data, target_column)
             churn_model.preprocess_data()
             churn_model.train_model()
-            result = churn_model.predict()
+            churn_model.predict()
             accuracy = churn_model.evaluate_model()
 
-            # Generate the pie chart for churn distribution
+            # Generate charts
             pie_chart = churn_model.generate_pie_chart()
-            # Generate the feature importance chart
             feature_importance = churn_model.generate_feature_importance_chart()
-            # Generate the histogram for feature distribution
             histogram = churn_model.generate_histogram()
-            # Return both the result and charts
+
+            # If charts are images, convert them to base64
+            pie_chart_base64 = FileProcessor.to_base64(pie_chart)
+            feature_importance_base64 = FileProcessor.to_base64(feature_importance)
+            histogram_base64 = FileProcessor.to_base64(histogram)
+
+            # Return a JSON-serializable dictionary
             return {
-                "result": result.to_dict(),
                 "accuracy": accuracy,
-                # "pie_chart": pie_chart,
-                # "histogram": histogram,
-                # "feature_importance": feature_importance,
+                "pie_chart": pie_chart_base64,
+                "feature_importance": feature_importance_base64,
+                "histogram": histogram_base64,
             }
+
         except Exception as e:
             return f"Error in churn prediction: {str(e)}"
+
+    @staticmethod
+    def to_base64(image):
+        """Convert an image to a base64-encoded string."""
+        if isinstance(image, bytes):
+            return base64.b64encode(image).decode("utf-8")
+        elif isinstance(image, str):
+            return image  # Assume the image is already base64 encoded
+        else:
+            raise ValueError("Image is not in a valid format")

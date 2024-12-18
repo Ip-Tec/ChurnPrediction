@@ -193,6 +193,22 @@
             })
             .then((data) => {
               console.log("Churn process completed successfully!", data);
+              // Insert HTML content and add event listeners for column selection
+              contentArea.innerHTML = `
+              <div class="content active">
+                <h3>File Process</h3>
+                <p>Accuracy: ${data.accuracy  * 100}</p>
+
+                <h2>Feature Importance</h2>
+                <img class="img" src="data:image/png;base64, ${data.feature_importance}" alt="feature_importance"/>
+
+                <h2>Histogram</h2>
+                <img class="img" src="data:image/png;base64, ${data.histogram}" alt="histogram"/>
+
+                <h2>Pie Chart</h2>
+                <img class="img" src="data:image/png;base64, ${data.pie_chart}" alt="pie_chart"/>
+              </div>
+            `;
               alert("Churn process completed successfully!");
             })
             .catch((error) => {

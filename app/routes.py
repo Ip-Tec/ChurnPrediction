@@ -13,6 +13,7 @@ from flask import (
     current_app,
     render_template,
 )
+import traceback
 import pandas as pd
 from .controllers.UploadController import (
     FileProcessor,
@@ -352,8 +353,9 @@ def process_churn():
 
         # Process the file
         try:
-            churn_result = FileProcessor.UploadFile(file_path, target_column)
-            print(f"Churn result: {churn_result["accuracy"]}")
+            file_processor = FileProcessor(file_path, target_column)
+            churn_result = file_processor.UploadFile(file_path, target_column)
+            # print(f"Churn result: {churn_result}")
 
             # Store churn_result temporarily in the session
             # session["churn_result"] = churn_result
@@ -362,8 +364,12 @@ def process_churn():
             print(f"Error in FileProcessor.UploadFile: {e}")
             return jsonify({"error": "Failed to process file"}), 500
 
-        # Redirect to the chart page with the file_id
-        return redirect(url_for("main.chart", file_id=file_id))
+        # Get user info from session
+        session_user_id = session.get("user_id")
+
+        # Redirect to the chart page with the user id
+        print(churn_result)
+        return jsonify(churn_result), 200
 
     except Exception as e:
         print(f"Unhandled Exception: {e}")
@@ -372,22 +378,22 @@ def process_churn():
 
 
 # Chart route: Handles chart rendering
-@main.route("/chart/<int:file_id>", methods=["GET"])
-def chart(file_id):
+@main.route("/chart/<int:user_id>", methods=["GET"])
+def chart(user_id):
     # Retrieve churn_result from the session
-    churn_result = session.get("churn_result")
+    # churn_result = session.get("churn_result")
 
-    if not churn_result:
-        return jsonify({"error": "Churn result not found in session"}), 404
+    # if not churn_result:
+    #     return jsonify({"error": "Churn result not found in session"}), 404
 
     # Fetch file details from the database
-    file_record = DataModel.query.filter_by(id=file_id).first()
+    # file_record = UserModel.query.filter_by(id=user_id).first()
 
-    if not file_record:
-        return jsonify({"error": "File not found"}), 404
+    # if not file_record:
+    #     return jsonify({"error": "File not found"}), 404
 
-    # Render the chart page with the file_id and churn_result
-    return render_template("chart.html", file_id=file_id, churn_result=churn_result)
+    # Render the chart page with the user_id and churn_result
+    return render_template("chart.html", user_id=user_id, churn_result=user_id)
 
 
 @main.route("/preview-data", methods=["POST"])

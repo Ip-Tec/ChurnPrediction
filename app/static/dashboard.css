@@ -220,3 +220,8 @@ th {
 .selected {
   background-color: #7abee0;
 }
+
+.img {
+  width: 8.2rem;
+  height: 8.5rem;
+}

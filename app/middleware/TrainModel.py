@@ -3,6 +3,9 @@ import base64
 import pandas as pd
 import seaborn as sns
 from io import BytesIO
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
@@ -89,37 +92,41 @@ class ChurnModel:
             X, y, test_size=0.2, random_state=42
         )
 
-        # Standardize features
+        # Standardize features (keep them as DataFrames)
         self.scaler = StandardScaler()
-        self.X_train = self.scaler.fit_transform(self.X_train)
-        self.X_test = self.scaler.transform(self.X_test)
+        self.X_train = pd.DataFrame(
+            self.scaler.fit_transform(self.X_train), columns=X.columns
+        )
+        self.X_test = pd.DataFrame(
+            self.scaler.transform(self.X_test), columns=X.columns
+        )
 
     def train_model(self):
         """Train a Random Forest classifier on the preprocessed data."""
         if self.X_train is None or self.y_train is None:
-            print("Data not preprocessed. Please run preprocess_data() first.")
+            # print("Data not preprocessed. Please run preprocess_data() first.")
             raise ValueError("Data not preprocessed")
 
         self.model = RandomForestClassifier(n_estimators=100, random_state=42)
         self.model.fit(self.X_train, self.y_train)
-        print("Model training completed.")
+        # print("Model training completed.")
 
     def predict(self):
         """Make predictions on the test set."""
         if self.model is None:
-            print("Model not trained. Please run train_model() first.")
+            # print("Model not trained. Please run train_model() first.")
             raise ValueError("Model not trained")
         return self.model.predict(self.X_test)
 
     def evaluate_model(self):
         """Evaluate the model's performance on the test set."""
         if self.model is None:
-            print("Model not trained. Please run train_model() first.")
+            # print("Model not trained. Please run train_model() first.")
             raise ValueError("Model not trained")
 
         y_pred = self.model.predict(self.X_test)
         accuracy = accuracy_score(self.y_test, y_pred)
-        print(f"Model Accuracy: {accuracy * 100:.2f}%")
+        # print(f"Model Accuracy: {accuracy * 100:.2f}%")
         return accuracy
 
     def save_artifacts(self, model_path="churn_model.pkl", scaler_path="scaler.pkl"):
@@ -130,7 +137,7 @@ class ChurnModel:
         :param scaler_path: File path to save the scaler.
         """
         if self.model is None:
-            print("Model not trained. Please run train_model() first.")
+            # print("Model not trained. Please run train_model() first.")
             raise ValueError("Model not trained")
 
         joblib.dump(self.model, model_path)
