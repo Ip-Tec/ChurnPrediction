@@ -30,8 +30,9 @@
             name="password"
             placeholder="********"
           />
+
           <!-- Display the CAPTCHA image -->
-          <img src="{{ url_for('main.serve_captcha_image') }}" style="width: auto; height: 2rem" alt="CAPTCHA" />
+          <img src="{{ url_for('main.serve_captcha_image') }}" class="captcha" alt="CAPTCHA" />
 
           <label for="captcha">Enter the text from the image</label>
           <input

@@ -85,6 +85,13 @@ def delete_captcha_image(captcha_id):
     except Exception as e:
         current_app.logger.error(f"Error deleting CAPTCHA image: {e}")
 
+# Route for the home page
+@main.route("/")
+def index():
+    # Check if the user is already logged in
+    if "user_id" in session:
+        return redirect(url_for("main.dashboard"))
+    return redirect(url_for("main.login"))
 
 # Login route: Handles both GET and POST requests for user login
 @main.route("/login", methods=["GET", "POST"])
